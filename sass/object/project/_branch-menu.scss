@@ -1,0 +1,72 @@
+.p-branch-menu {
+  height: 1400px;
+  display: flex;
+  @include tab{
+    height: auto;
+    background-size: cover;
+  }
+  @include sp {
+    height: 1200px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__wrap {
+    position: relative;
+    height: 1193px;
+    width: 625px;
+    margin: 100px 60px;
+    @include tab {
+      height: 681px;
+      width: 357px;
+      margin: 66px 30px;
+    }
+    @include sp {
+      width: 335px;
+    }
+    h2 {
+      position: relative;
+      font-size: 3.5rem;
+      padding-top: 30px;
+      padding-left: 20px;
+      color: #eaeaea;
+      @include tab {
+        font-size: 2.3rem;
+        padding-top: 20px;
+        padding-left: 13px;
+      }
+      &::after {
+        position: absolute;
+        top: 140px;
+        left: 26px;
+        content: "";
+        width: 60px;
+        height: 6px;
+        background-color: #eaeaea;
+        @include tab {
+          top: 96px;
+          left: 18px;
+          width: 40px;
+          height: 4px;
+        }
+      }
+    }
+  }
+  .takeout {
+    background: url(../img/c-wrap_takeout.png) no-repeat;
+    @include tab {
+      background-size: 100%;
+    }
+    @include sp {
+      margin: 20px;
+    }
+  }
+  .eatin {
+    background: url(../img/c-wrap_eatin.png) no-repeat;
+    @include tab {
+      background-size: 100%;
+    }
+    @include sp {
+      margin: 0 20px 20px 20px;
+    }
+  }
+}

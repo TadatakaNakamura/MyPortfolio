@@ -1,0 +1,54 @@
+.p-box {
+  position: absolute;
+  bottom: 0;
+  &__description {
+    height: 174px;
+    width: 585px;
+    margin: 0 20px 20px;
+    background-color: #eaeaea;
+    opacity: 0.8;
+    @include tab {
+      height: 172px;
+      width: 320px;
+    }
+    @include sp {
+      height: 163px;
+      width: 314px;
+      margin: 10px;
+    }
+    h4 {
+      font-size: 24px;
+      padding: 22px 19px;
+      color: #fff;
+      @include sp {
+        font-size: 18px;
+        padding: 16px 13px;
+      }
+    }
+    p {
+      font-size: 16px;
+      padding: 9px 19px;
+      line-height: 1.5;
+      color: #fff;
+      @include sp {
+        font-size: 12px;
+        padding: 6px 13px;
+      }
+    }
+  }
+  &-archivepage {
+    padding: 70px 100px;
+    @include tab {
+      padding: 50px;
+    }
+    h4 {
+      font-size: 34px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      padding-top: 33px;
+      line-height: 1.8;
+    }
+  }
+}

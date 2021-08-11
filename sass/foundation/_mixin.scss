@@ -1,0 +1,13 @@
+$tab: 1900px;
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+$sp: 850px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

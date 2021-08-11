@@ -1,0 +1,70 @@
+.p-picture {
+  width: 100%;
+  * {
+    padding: 15px 0;
+  }
+  &__top {
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+      @include tab {
+        height: 280px;
+      }
+    }
+  }
+  &__column {
+    display: flex;
+    height: 358px;
+    width: 100%;
+    @include sp {
+      height: 100%;
+    }
+    img {
+      object-fit: cover;
+      @include tab {
+        height: 240px;
+      }
+    }
+    p {
+      line-height: 1.6;
+    }
+  }
+  .top p {
+    padding-left: 40px;
+    @include tab {
+      padding-left : 20px;
+    }
+  }
+  .bottom p {
+    padding-right: 40px;
+    @include tab {
+      padding-right : 20px;
+    }
+  }
+  &__bottom {
+    width: 65%;
+    margin: 0 auto;
+    img {
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+  &__tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img {
+      width: 33%;
+      @include tab {
+        width: 50%;
+        padding: 10px;
+      }
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+}

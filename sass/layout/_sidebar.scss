@@ -1,0 +1,42 @@
+.l-sidebar {
+  padding-left: 60px;
+  @include tab {
+    padding-top: 100px;
+  }
+  > a {
+    display: block;
+    font-size: 34px;
+    font-weight: 600;
+    color: #707070;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    @include tab {
+      display: none;
+    }
+  }
+  ul {
+    li {
+      padding-bottom: 15px;
+      font-size: 24px;
+      > a {
+        color: #707070;
+        font-weight: 700;
+      }
+      ul {
+        padding-top: 32px;
+        padding-left: 18px;
+        li {
+          font-size: 20px;
+          padding-bottom: 30px;
+          a {
+            color: #707070;
+            font-weight: 500;
+            &:hover {
+              color: #dfdfdf;
+            }
+          }
+        }
+      }
+    }
+  }
+}

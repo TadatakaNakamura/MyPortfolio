@@ -1,0 +1,49 @@
+.l-main {
+  display: flex;
+  &.is-open {
+    position: relative;
+  }
+  &__left {
+    width: 80%;
+    height: 100%;
+    @include tab {
+      width: 100%;
+    }
+    &.is-open {
+      position: relative;
+      overflow-y: scroll;
+      &::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.5);
+        z-index: 200;
+      }
+    }
+  }
+  &__right {
+    width: 20%;
+    height: 100%;
+    background-color: #f2ede9;
+    z-index: 100;
+    @include tab {
+      position: fixed;
+      left: 100%;
+    }
+    &.is-open {
+      animation: 0.7s slidein;
+      overflow-y: auto;
+      left: 65%;
+      width: 35%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: 300;
+      @include sp {
+        left: 15%;
+        width: 85%;
+      }
+    }
+  }
+}

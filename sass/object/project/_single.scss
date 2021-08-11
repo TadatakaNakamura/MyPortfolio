@@ -1,0 +1,18 @@
+.p-single {
+  &__code {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    code {
+      font-size: 18px;
+      line-height: 1.6;
+      color: black;
+    }
+  }
+  &__bold {
+    margin-bottom: 300px;
+    p {
+      font-weight: bold;
+    }
+  }
+}

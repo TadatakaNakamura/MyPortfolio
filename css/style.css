@@ -336,6 +336,10 @@ a {
     transform: translateX(0);
   }
 }
+body.is-fixed {
+  overflow: hidden;
+}
+
 .l-header {
   width: 100%;
   height: 217px;

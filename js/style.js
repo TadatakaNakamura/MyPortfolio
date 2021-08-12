@@ -7,6 +7,7 @@ $(function(){
 
 $(window).on("resize", function () {
     　if (window.matchMedia("(min-width:1900px)").matches) {
-       $(".c-button__close, .l-main__right, .l-mein__left, l-main").removeClass("is-open");
+       $(".c-button__close, .l-main__right, l-main").removeClass("is-open")
+       $(".l-main__left").removeClass("is-open");
     　}
 });

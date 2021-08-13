@@ -24,7 +24,7 @@
   }
   &__right {
     width: 20%;
-    height: 100%;
+    height: inherit;
     background-color: #f2ede9;
     z-index: 100;
     @include tab {

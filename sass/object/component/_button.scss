@@ -11,23 +11,23 @@
       right: 0;
       &::before {
         content: "";
-        height: 2.5px;
-        width: 24px;
-        right: 13px;
-        top: 48%;
+        height: 3px;
+        width: 46px;
+        top: 50%;
+        transform: rotate(45deg);
         display: block;
         position: absolute;
-        background-color: #121212;
+        background-color: #707070;
       }
       &::after {
         content: "";
-        height: 24px;
-        width: 2.5px;
-        right: 24px;
-        top: 26%;
+        height: 3px;
+        width: 46px;
+        top: 50%;
+        transform: rotate(-45deg);
         display: block;
         position: absolute;
-        background-color: #121212;
+        background-color: #707070;
       }
     }
   }

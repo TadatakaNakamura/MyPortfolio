@@ -462,7 +462,7 @@ body.is-fixed {
 }
 .l-main__right {
   width: 20%;
-  height: 100%;
+  height: inherit;
   background-color: #f2ede9;
   z-index: 100;
 }
@@ -561,23 +561,23 @@ body.is-fixed {
 }
 .c-button__close.is-open::before {
   content: "";
-  height: 2.5px;
-  width: 24px;
-  right: 13px;
-  top: 48%;
+  height: 3px;
+  width: 46px;
+  top: 50%;
+  transform: rotate(45deg);
   display: block;
   position: absolute;
-  background-color: #121212;
+  background-color: #707070;
 }
 .c-button__close.is-open::after {
   content: "";
-  height: 24px;
-  width: 2.5px;
-  right: 24px;
-  top: 26%;
+  height: 3px;
+  width: 46px;
+  top: 50%;
+  transform: rotate(-45deg);
   display: block;
   position: absolute;
-  background-color: #121212;
+  background-color: #707070;
 }
 .c-button button {
   background-color: #f2ede9;
@@ -717,6 +717,7 @@ body.is-fixed {
 }
 .p-box__description h4 {
   font-size: 24px;
+  font-family: "Robot";
   padding: 22px 19px;
   color: #fff;
 }

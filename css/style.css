@@ -699,8 +699,7 @@ body.is-fixed {
   height: 174px;
   width: 585px;
   margin: 0 20px 20px;
-  background-color: #eaeaea;
-  opacity: 0.8;
+  background: rgba(234, 234, 234, 0.8);
 }
 @media (max-width: 1900px) {
   .p-box__description {
@@ -716,10 +715,11 @@ body.is-fixed {
   }
 }
 .p-box__description h4 {
+  z-index: 500;
   font-size: 28px;
   font-family: "Arial Narrow", sans-serif;
   padding: 22px 19px;
-  color: #fff;
+  color: white;
 }
 @media (max-width: 850px) {
   .p-box__description h4 {
@@ -728,6 +728,7 @@ body.is-fixed {
   }
 }
 .p-box__description p {
+  z-index: 500;
   font-size: 16px;
   padding: 9px 19px;
   line-height: 1.5;

@@ -22,3 +22,23 @@ body{
       overflow: hidden;
   }
 }
+
+@font-face{
+  font-family: "mplus-1m-bold";
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-bold.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-bold.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-bold.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "mplus-1m-regular";
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.eot');
+  src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.eot?#iefix') format('embedded-opentype'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.woff') format('woff'),
+       url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.ttf') format('truetype');
+}
+
+body {
+  font-family: "Roboto";
+}

@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #f5f5f5;
     padding: 20px;
+    font-family: "mplus-1m-regular";
     code {
       font-size: 18px;
       line-height: 1.6;
@@ -12,7 +13,7 @@
   &__bold {
     margin-bottom: 300px;
     p {
-      font-weight: bold;
+      font-family: "mplus-1m-bold";
     }
   }
 }

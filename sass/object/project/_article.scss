@@ -15,12 +15,14 @@
     h4,
     h5,
     h6 {
+      font-family: "mplus-1m-bold";
       font-weight: 700;
     }
     h2 {
       font-size: 36px;
     }
     p {
+      font-family: "mplus-1m-regular";
       font-size: 16px;
       line-height: 1.6;
     }
@@ -42,6 +44,7 @@
     }
     blockquote,
     p {
+      font-family: "mplus-1m-regular";
       padding: 0 50px;
     }
     blockquote {
@@ -56,6 +59,7 @@
     width: 100%;
     padding: 67px;
     font-size: 16px;
+    font-family: "mplus-1m-regular";
     ol {
       line-height: 1.6;
       padding-bottom: 60px;

@@ -18,7 +18,7 @@
     h4 {
       z-index: 500;
       font-size: 28px;
-      font-family: "Arial Narrow", sans-serif;
+      font-family: "mplus-1m-bold";
       padding: 22px 19px;
       color: rgb(255, 255, 255);
       @include sp {
@@ -29,6 +29,7 @@
     p {
       z-index: 500;
       font-size: 16px;
+      font-family: "mplus-1m-regular";
       padding: 9px 19px;
       line-height: 1.5;
       color: #fff;
@@ -44,10 +45,12 @@
       padding: 50px;
     }
     h4 {
+      font-family: "mplus-1m-bold";
       font-size: 34px;
       font-weight: 500;
     }
     p {
+      font-family: "mplus-1m-regular";
       font-size: 14px;
       padding-top: 33px;
       line-height: 1.8;

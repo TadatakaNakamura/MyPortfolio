@@ -29,6 +29,7 @@
     }
     p {
       line-height: 1.6;
+      font-family: "mplus-1m-regular";
     }
   }
   .top p {
@@ -56,6 +57,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @include tab {
+      justify-content: flex-start;
+    }
     img {
       width: 33%;
       @include tab {

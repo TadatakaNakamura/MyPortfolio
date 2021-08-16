@@ -43,6 +43,7 @@
     display: none;
     @include sp {
       font-size: 20px;
+      font-family: "mplus-1m-regular";
       margin: 0 20px;
       display: flex;
       justify-content: space-between;

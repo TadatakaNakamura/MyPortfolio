@@ -31,16 +31,17 @@
       }
       h3 {
         font-size: 28px;
-        font-weight: 500;
+        font-family: "mplus-1m-bold";
         color: #fff;
         @include tab {
-          font-size: 20px;
+          font-size: 16px;
         }
       }
       h4 {
         margin-top: 24px;
         font-size: 20px;
         font-weight: 450;
+        font-family: "mplus-1m-bold";
         color: #fff;
         @include tab {
           font-size: 12px;
@@ -50,6 +51,7 @@
         margin-top: 18px;
         font-size: 12px;
         font-weight: 300;
+        font-family: "mplus-1m-regular";
         color: #fff;
         @include tab {
           font-size: 10px;
@@ -59,6 +61,7 @@
         }
       }
       a {
+        font-family: "mplus-1m-bold";
         display: block;
         text-align: center;
         height: 60px;

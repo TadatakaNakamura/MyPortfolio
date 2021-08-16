@@ -10,6 +10,7 @@
   }
   p {
     font-size: 40px;
+    font-family: "mplus-1m-bold";
     color: #fff;
     padding-left: 86px;
     padding-top: 259px;
@@ -57,6 +58,7 @@
     }
     p {
       color: #fff;
+      font-family: "mplus-1m-bold";
       @include sp {
         padding-left: 0;
       }
@@ -76,6 +78,7 @@
   }
   h1 {
     color: #fff;
+    font-family: "mplus-1m-bold";
     font-size: 60px;
     font-weight: 600;
     padding-left: 86px;

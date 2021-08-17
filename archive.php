@@ -7,7 +7,7 @@
   <title>hamburgerメニュー</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburger.css">
 
 </head>
 

@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hamburgerメニュー</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- 読み取り先を変更 -->
+  <link rel="stylesheet" href="css/hamburger.css">
 
 </head>
 

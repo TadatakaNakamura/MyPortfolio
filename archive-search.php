@@ -16,20 +16,8 @@
 
       <article class="l-main__left">
         <header class="l-header">
-          <div class="l-header__title">
-            <a>
-              <h1>Hamburger</h1>
-            </a>
-          </div>
-          <form class="l-header__right p-search-form">
-            <input type="text" class="p-search-form__box"  name="search"　value="&#xf002;">
-            <input type="submit" class="p-search-form__button"  value="検索">
-          </form>
 
-          <div class="p-bar">
-            <button class="p-bar__button">Menu</button>
-          </div>
-        </header>
+        <php? get_header(); ?>
 
         <div class="p-contents">
 
@@ -115,45 +103,7 @@
       </div>
       </article>
 
-      <aside class="l-main__right">
-        <div class="l-sidebar">
-          <div class="c-button__close"></div>
-          <a href="#">Menu</a>
-          <ul>
-           <li><a href="#">バーガー</a>
-            <ul>
-             <li><a href="#">ハンバーガー</a></li>
-             <li><a href="#">チーズバーガー</a></li>
-             <li><a href="#">テリヤキバーガー</a></li>
-             <li><a href="#">アボカドバーガー</a></li>
-             <li><a href="#">フィッシュバーガー</a></li>
-             <li><a href="#">ベーコンバーガー</a></li>
-             <li><a href="#">チキンバーガー</a></li>
-            </ul>
-           </li>
-
-           <li><a href="#">サイド</a>
-            <ul>
-             <li><a href="#">ポテト</a></li>
-             <li><a href="#">サラダ</a></li>
-             <li><a href="#">ナゲット</a></li>
-             <li><a href="#">コーン</a></li>
-            </ul>
-           </li>
-
-           <li><a href="#">ドリンク</a>
-            <ul>
-             <li><a href="#">コーラ</a></li>
-             <li><a href="#">ファンタ</a></li>
-             <li><a href="#">オレンジ</a></li>
-             <li><a href="#">アップル</a></li>
-             <li><a href="#">紅茶（Ice/Hot）</a></li>
-             <li><a href="#">コーヒー（Ice/Hot）</a></li>
-            </ul>
-           </li>
-          </ul>
-         </div>
-      </aside>
+      <?php get_sidebar(); ?>
 
     </main>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -161,14 +111,6 @@
 
   </body>
 
-  <footer class="l-footer">
-    <div class="l-footer__section">
-      <a href="#">ショップ情報</a>
-      <a href="#">ヒストリー</a>
-    </div>
-    <p>
-      <small>Copyright : RaiseTech</small>
-    </p>
-  </footer>
+  <?php get_footer(); ?>
 
 </html>

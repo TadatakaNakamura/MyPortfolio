@@ -11,12 +11,11 @@
 
 </head>
 
-  <body>
-    <div></div>
+  <body <?php body_class(); ?>>
     <main class="l-main">
       <div class="l-main__left">
 
-      <php? get_header(); ?>
+      <?php get_header(); ?>
 
         <div class="p-contents">
 

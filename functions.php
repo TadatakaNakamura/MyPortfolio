@@ -1,6 +1,7 @@
 <?php
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
 
     function hamburger_script() {
         wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), 'v5.6.1' );

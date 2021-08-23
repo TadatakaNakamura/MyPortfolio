@@ -8,21 +8,28 @@
   font-family: "mplus-1m-regular";
   &__section {
     padding-top: 43px;
-    a {
-      position: relative;
-      color: #fff;
-      font-size: 20px;
-      padding: 43px 10px;
-      position: relative;
-      &:last-of-type {
+    ul {
+      display: flex;
+      li {
+        position: relative;
         &::before {
           position: absolute;
-          top: 45px;
-          left: -3px;
+          top: 4px;
           content: "";
           background-color: #fff;
           width: 2px;
           height: 20px;
+        }
+        &:first-of-type {
+          &::before {
+            display: none;
+          }
+        }
+        a {
+          color: #fff;
+          font-size: 20px;
+          padding: 43px 10px;
+          position: relative;
         }
       }
     }

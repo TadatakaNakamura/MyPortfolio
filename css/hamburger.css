@@ -518,21 +518,28 @@ body {
 .l-footer__section {
   padding-top: 43px;
 }
-.l-footer__section a {
-  position: relative;
-  color: #fff;
-  font-size: 20px;
-  padding: 43px 10px;
+.l-footer__section ul {
+  display: flex;
+}
+.l-footer__section ul li {
   position: relative;
 }
-.l-footer__section a:last-of-type::before {
+.l-footer__section ul li::before {
   position: absolute;
-  top: 45px;
-  left: -3px;
+  top: 4px;
   content: "";
   background-color: #fff;
   width: 2px;
   height: 20px;
+}
+.l-footer__section ul li:first-of-type::before {
+  display: none;
+}
+.l-footer__section ul li a {
+  color: #fff;
+  font-size: 20px;
+  padding: 43px 10px;
+  position: relative;
 }
 .l-footer p {
   color: #fff;

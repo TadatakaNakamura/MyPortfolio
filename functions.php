@@ -60,3 +60,11 @@
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
 
+    function register_hamburger_menus(){
+        register_nav_menus( array(
+            'side-menu' => 'SideMenu',
+            'footer-menu' => 'FooterMenu',
+        ));
+    }
+    add_action( 'after_setup_theme', 'register_hamburger_menus');
+

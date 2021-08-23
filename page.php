@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+      <?php get_header(); ?>
 
         <div class="p-contents">
 
@@ -7,21 +7,22 @@
           </div>
 
           <div class="p-article">
-            <?php if(have_posts()):
-              while(have_posts()):
+          <?php
+            if(have_posts() ):
+              while( have_posts() ):
                 the_post(); ?>
                 <div id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
                   <?php the_content(); ?>
                 </div>
-                <?php endwhile;
+              <?php endwhile;
               else:
                 ?>
-            <p>表示する記事がありません</p>
-            <?php endif; ?>
+                <p>表示する記事がありません</p>
+                <?php endif; ?>
           </div>
 
         </div>
-      </article>
+      </div>
 
       <?php get_sidebar(); ?>
 

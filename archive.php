@@ -64,7 +64,7 @@
         <a href="#">&#60;&#60; 前へ</a>
         <a href="#">次へ &#62;&#62;</a>
       </div>
-      </article>
+    </div>
 
       <?php get_sidebar(); ?>
 

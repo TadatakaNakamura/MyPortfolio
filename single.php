@@ -115,7 +115,7 @@
 
           </div>
         </div>
-      </article>
+      </div>
 
       <?php get_sidebar(); ?>
 

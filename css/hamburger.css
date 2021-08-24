@@ -909,35 +909,30 @@ body {
 }
 .p-pagenation ul {
   display: flex;
+  align-items: center;
 }
 .p-pagenation ul li {
   padding: 2px 12px;
   font-size: 18px;
   font-weight: 600;
 }
-.p-pagenation ul li:first-of-type {
-  padding-top: 10px;
+.p-pagenation ul li span {
+  padding: 10px;
 }
-.p-pagenation ul li:first-of-type::after {
-  content: "<<";
-  color: #3c2b1c;
-  padding-left: 10px;
-}
-.p-pagenation ul li:last-of-type {
-  position: relative;
-}
-.p-pagenation ul li:last-of-type::after {
-  position: absolute;
-  top: 10px;
-  right: -24px;
-  content: ">>";
-  color: #3c2b1c;
+.p-pagenation ul li .current {
+  border: solid 1px #3c2b1c;
+  background-color: #3c2b1c;
+  color: #fff;
 }
 .p-pagenation ul li a {
   display: block;
   color: #3c2b1c;
   border: solid 1px #3c2b1c;
   padding: 8px;
+}
+.p-pagenation ul li .prev,
+.p-pagenation ul li .next {
+  border: none;
 }
 .p-pagenation-sp {
   display: none;

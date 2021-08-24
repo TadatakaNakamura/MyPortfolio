@@ -37,19 +37,8 @@
         </div>
 
         <div class="p-pagenation">
-          <ul>
-              <li>page 1/10</li>
-              <li><a href="/html/archive.html">1</a></li>
-              <li><a href="/html/archive.html">2</a></li>
-              <li><a href="/html/archive.html">3</a></li>
-              <li><a href="/html/archive.html">4</a></li>
-              <li><a href="/html/archive.html">5</a></li>
-              <li><a href="/html/archive.html">6</a></li>
-              <li><a href="/html/archive.html">7</a></li>
-              <li><a href="/html/archive.html">8</a></li>
-              <li><a href="/html/archive.html">9</a></li>
-          </ul>
-      </div>
+          <?php if( function_exists("the_pagination") ) the_pagination(); ?>
+        </div>
 
       <div class="p-pagenation-sp">
         <a href="#">&#60;&#60; 前へ</a>

@@ -5,7 +5,7 @@
           <div class="p-mainvisual-archive">
             <div class="p-mainvisual-archive__text">
               <h2>MENU：</h2>
-              <p>チーズバーガー</p>
+              <p><?php single_cat_title(); ?></p>
             </div>
           </div>
 
@@ -15,33 +15,24 @@
           </div>
 
           <div class="p-menu">
-            <div class="p-menu__card">
-              <img src="./img/burg_cheese.png" alt="チーズバーガーの写真">
-              <div class="p-menu__card__text">
-                <h3>チーズバーガー</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <a href="#">詳しく見る</a>
+
+            <?php
+              if (have_posts()) :
+                while (have_posts()) :
+                  the_post(); ?>
+              <div class="p-menu__card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <?php the_post_thumbnail(); ?>
+                  <div class="p-menu__card__text">
+                    <h3><?php the_title(); ?></h3>
+                    <?php the_excerpt(); ?>
+                    <a href="<?php the_permalink(); ?>">詳しく見る</a>
+                  </div>
               </div>
-            </div>
-            <div class="p-menu__card">
-              <img src="./img/burg_cheese.png" alt="">
-              <div class="p-menu__card__text">
-                <h3>ダブルチーズバーガー</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <a href="#">詳しく見る</a>
-              </div>
-            </div>
-            <div class="p-menu__card">
-              <img src="./img/burg_cheese.png" alt="">
-              <div class="p-menu__card__text">
-                <h3>スペシャルチーズバーガー</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <a href="#">詳しく見る</a>
-              </div>
-            </div>
+              <?php endwhile;
+              else :
+             ?><p>表示する記事がありません</p>
+            <?php endif; ?>
+
           </div>
         </div>
 

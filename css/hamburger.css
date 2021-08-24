@@ -790,8 +790,8 @@ body {
 
 .p-menu__card {
   display: flex;
-  height: 471px;
-  width: 1353px;
+  height: auto;
+  width: 100%;
   padding: 0 100px 30px;
 }
 @media (max-width: 1900px) {
@@ -809,12 +809,18 @@ body {
     padding: 20px;
   }
 }
+.p-menu__card img {
+  width: 43%;
+  height: auto;
+}
 @media (max-width: 850px) {
   .p-menu__card img {
     width: 100%;
   }
 }
 .p-menu__card__text {
+  height: auto;
+  width: 100%;
   background-color: #3c2b1c;
   padding: 50px 63px;
 }

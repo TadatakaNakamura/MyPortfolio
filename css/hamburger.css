@@ -619,6 +619,10 @@ body {
   line-height: 100px;
 }
 
+.c-category-title {
+  display: none;
+}
+
 .p-contents {
   display: flex;
   flex-direction: column;

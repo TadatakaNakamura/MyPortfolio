@@ -912,14 +912,14 @@ body {
 }
 .p-pagenation ul li {
   padding: 2px 12px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 500;
 }
 .p-pagenation ul li .page-numbers {
   display: block;
   color: #3c2b1c;
   border: solid 1px #3c2b1c;
-  padding: 8px;
+  padding: 10px;
 }
 @media (max-width: 850px) {
   .p-pagenation ul li .page-numbers {
@@ -933,27 +933,36 @@ body {
   padding: 8px;
 }
 .p-pagenation ul li .prev {
+  font-family: "mplus-1m-regular";
+  font-weight: 300;
   border: none;
 }
 @media (max-width: 850px) {
   .p-pagenation ul li .prev {
     display: block;
+    position: absolute;
+    left: 10px;
   }
   .p-pagenation ul li .prev::after {
-    width: 70px;
     content: "前へ";
+    padding-left: 10px;
   }
 }
 .p-pagenation ul li .next {
+  font-family: "mplus-1m-regular";
+  font-weight: 300;
   border: none;
 }
 @media (max-width: 850px) {
   .p-pagenation ul li .next {
     display: block;
+    position: absolute;
+    right: 10px;
   }
   .p-pagenation ul li .next::before {
-    width: 70px;
     content: "後へ";
+    font-family: "mplus-1m-regular";
+    padding-right: 10px;
   }
 }
 

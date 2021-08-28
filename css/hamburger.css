@@ -906,11 +906,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 850px) {
-  .p-pagenation {
-    display: none;
-  }
-}
 .p-pagenation ul {
   display: flex;
   align-items: center;
@@ -920,37 +915,45 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-.p-pagenation ul li span {
-  padding: 10px;
-}
-.p-pagenation ul li .current {
-  border: solid 1px #3c2b1c;
-  background-color: #3c2b1c;
-  color: #fff;
-}
-.p-pagenation ul li a {
+.p-pagenation ul li .page-numbers {
   display: block;
   color: #3c2b1c;
   border: solid 1px #3c2b1c;
   padding: 8px;
 }
-.p-pagenation ul li .prev,
+@media (max-width: 850px) {
+  .p-pagenation ul li .page-numbers {
+    display: none;
+  }
+}
+.p-pagenation ul li .current {
+  border: solid 1px #3c2b1c;
+  background-color: #3c2b1c;
+  color: #fff;
+  padding: 8px;
+}
+.p-pagenation ul li .prev {
+  border: none;
+}
+@media (max-width: 850px) {
+  .p-pagenation ul li .prev {
+    display: block;
+  }
+  .p-pagenation ul li .prev::after {
+    width: 70px;
+    content: "前へ";
+  }
+}
 .p-pagenation ul li .next {
   border: none;
 }
-.p-pagenation-sp {
-  display: none;
-}
 @media (max-width: 850px) {
-  .p-pagenation-sp {
-    font-size: 20px;
-    font-family: "mplus-1m-regular";
-    margin: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 20px;
+  .p-pagenation ul li .next {
+    display: block;
+  }
+  .p-pagenation ul li .next::before {
+    width: 70px;
+    content: "後へ";
   }
 }
 

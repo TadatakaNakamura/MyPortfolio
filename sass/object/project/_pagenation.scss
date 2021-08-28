@@ -4,9 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include sp {
-    display: none;
-  }
   ul {
     display: flex;
     align-items: center;
@@ -14,37 +11,41 @@
       padding: 2px 12px;
       font-size: 18px;
       font-weight: 600;
-      span {
-        padding: 10px;
+      .page-numbers {
+        display: block;
+        color: #3c2b1c;
+        border: solid 1px #3c2b1c;
+        padding: 8px;
+        @include sp {
+          display: none;
+        }
       }
       .current {
         border: solid 1px #3c2b1c;
         background-color: #3c2b1c;
         color: #fff;
-      }
-      a {
-        display: block;
-        color: #3c2b1c;
-        border: solid 1px #3c2b1c;
         padding: 8px;
       }
-      .prev,
+      .prev {
+        border: none;
+        @include sp {
+          display: block;
+          &::after {
+            width: 70px;
+            content: "前へ";
+          }
+        }
+      }
       .next {
         border: none;
+        @include sp {
+          display: block;
+          &::before {
+            width: 70px;
+            content: "後へ";
+          }
+        }
       }
-    }
-  }
-  &-sp {
-    display: none;
-    @include sp {
-      font-size: 20px;
-      font-family: "mplus-1m-regular";
-      margin: 0 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100px;
-      padding: 0 20px;
     }
   }
 }

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-        <div class="p-contents">
+      　<div class="p-contents">
 
           <div class="p-mainvisual-archive">
             <div class="p-mainvisual-archive__text">
@@ -14,7 +14,7 @@
             <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div>
 
-          <div class="p-menu">
+        　<div class="p-menu">
 
             <?php
               if (have_posts()) :
@@ -39,12 +39,7 @@
         <div class="p-pagenation">
           <?php if( function_exists("the_pagination") ) the_pagination(); ?>
         </div>
-
-      <div class="p-pagenation-sp">
-        <a href="#">&#60;&#60; 前へ</a>
-        <a href="#">次へ &#62;&#62;</a>
-      </div>
-    </div>
+    　</div>
 
       <?php get_sidebar(); ?>
 

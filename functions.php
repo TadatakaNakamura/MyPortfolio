@@ -1,7 +1,22 @@
 <?php
-    add_theme_support( 'menus' );
-    add_theme_support( 'title-tag' );
-    add_theme_support( 'post-thumbnails' );
+    function custom_theme_support(){
+        add_theme_support('html5',array(
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+        ));
+        add_theme_support( 'title-tag' );
+        add_theme_support( 'post-thumbnails' );
+        add_theme_support( 'menus' );
+        register_hamburger_menus( array(
+            'footer_nav'=>esc_html__('footer navigation','rtbread'),
+            'category_nav'=>esc_html__('category navigation','rtbread'),
+        ));
+    }
+    add_action('after_setup_theme','custom_theme_support');
+
 
     function hamburger_script() {
         wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), 'v5.6.1' );
@@ -60,10 +75,11 @@
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
 
+    // メニューの追加
     function register_hamburger_menus(){
         register_nav_menus( array(
-            'side-menu' => 'SideMenu',
             'footer-menu' => 'FooterMenu',
+            'header-menu' => 'HeaderMenu'
         ));
     }
     add_action( 'after_setup_theme', 'register_hamburger_menus');
@@ -87,4 +103,25 @@
         ) );
         echo '</nav>';
         }
+
+        function create_post_type() {
+            register_post_type( 'item', [ // 投稿タイプ名
+                'labels' => [
+                    'name'          => '商品', // 管理画面右側バーの表示名
+                    'singular_name' => 'item',    // カスタム投稿の識別名
+                ],
+                'public'        => true,  // 投稿タイプをpublicにする
+                'has_archive'   => true, // アーカイブ機能をつける
+                'menu_position' => 5,     // 管理画面右バーの配置場所
+                'menu_icon'     => 'dashicons-store', //管理画面右バーにつくアイコン設定
+                'hierarchical'  => true,
+                'supports'      => [
+                    'title',
+                    'editor',
+                    'thumbnail',
+                    'page-attributes'
+                ]
+                ]);
+            }
+        add_action( 'init', 'create_post_type' );
 

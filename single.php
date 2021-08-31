@@ -3,7 +3,7 @@
         <div class="p-contents">
 
           <div class="p-mainvisual-single">
-            <h1>h1 チーズバーガー</h1>
+            <h1><?php the_title(); ?></h1>
           </div>
 
           <div class="p-article">

@@ -8,7 +8,7 @@
           <div class="p-mainvisual-archive">
             <div class="p-mainvisual-archive__text">
               <h2>Search：</h2>
-              <p><?php echo $_GET['s']; ?></p>
+              <p><?php echo get_search_query(); ?></p>
             </div>
           </div>
 
@@ -38,14 +38,14 @@
               if (isset($_GET['s']) && empty($_GET['s'])){
                 echo '検索キーワード未入力';
               }else{
-                echo '“'.$_GET['s'] .'”の検索結果：'.$wp_query->found_posts .'件';
+                echo '“'.get_search_query().'”の検索結果：'.$wp_query->found_posts .'件';
               }
               ?>
           </div>
         </div>
 
         <div class="p-pagenation">
-          <?php if( function_exists("the_pagination") ) the_pagination(); ?>
+          <?php wp_pagenavi(); ?>
         </div>
 
       </div>

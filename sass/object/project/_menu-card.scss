@@ -1,0 +1,31 @@
+.p-menu-card{
+  &__text{
+      width: 57%;
+      &--custom{
+          width: 50%;
+          >h1{
+              padding: 20px 0 20px 20px;
+              font-size: 40px;
+              font-family: "mplus-1m-bold";
+          }
+      }
+  }
+  &__info{
+      width: 100%;
+      padding: 30px 20px;
+      >p{
+          font-size: 20px;
+          padding: 10px 0;
+          font-family: "mplus-1m-normal";
+      }
+  }
+  &--custom{
+      display: flex;
+      padding: 20px 0;
+      img{
+          width: 50%;
+          height: 300px;
+          object-fit: cover;
+      }
+  }
+}

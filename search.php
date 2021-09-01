@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="<?php language_attributes(); ?>">
+
+  <?php get_header(); ?>
 
         <div class="p-contents">
 
@@ -15,10 +18,10 @@
           </div>
 
           <div class="p-menu">
-          <?php
-            if (have_posts()) :
-             while (have_posts()) :
-                the_post(); ?>
+
+          <?php if (have_posts()) :
+             while (have_posts()) :the_post(); ?>
+
               <div class="p-menu__card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <?php the_post_thumbnail(); ?>
                   <div class="p-menu__card__text">
@@ -27,9 +30,9 @@
                     <a href="<?php the_permalink(); ?>">詳しく見る</a>
                   </div>
               </div>
-              <?php endwhile;
-              else :
-              ?><p>表示する記事がありません</p>
+
+          <?php endwhile;
+              else :?><p>表示する記事がありません</p>
               <?php endif; ?>
             <?php
               if (isset($_GET['s']) && empty($_GET['s'])){
@@ -38,24 +41,20 @@
                 echo '“'.$_GET['s'] .'”の検索結果：'.$wp_query->found_posts .'件';
               }
               ?>
-
           </div>
         </div>
 
         <div class="p-pagenation">
-        <?php if( function_exists("the_pagination") ) the_pagination(); ?>
+          <?php if( function_exists("the_pagination") ) the_pagination(); ?>
         </div>
 
       </div>
-
       <?php get_sidebar(); ?>
 
     </main>
-
     <?php wp_footer(); ?>
 
   </body>
-
   <?php get_footer(); ?>
 
 </html>

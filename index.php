@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="<?php language_attributes(); ?>">
+
+  <?php get_header(); ?>
 
         <div class="p-contents">
 
@@ -49,15 +52,9 @@
           </div>
         </div>
       </div>
-
       <?php get_sidebar(); ?>
-
     </main>
-
-    <?php wp_footer(); ?>
-
+    <?php wp_footer(); ?>　
   </body>
-
   <?php get_footer(); ?>
-
 </html>

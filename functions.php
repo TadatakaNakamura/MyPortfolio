@@ -122,6 +122,14 @@
                     'page-attributes'
                 ]
                 ]);
+
+                register_taxonomy('item_category', 'item',[
+                    'labels' => [
+                        'name' => '商品カテゴリー',
+                ],
+                'hierarchical' => true,
+                'show in rest' => true,
+                ]);
             }
         add_action( 'init', 'create_post_type' );
 

@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +5,7 @@
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <meta name="description" content="WordPress theme development static data for beginners">
   <meta name="keywords" content="WordPress, Theme, development">
-
   <?php wp_head(); ?>
-
 </head>
 
   <body <?php body_class(); ?>>

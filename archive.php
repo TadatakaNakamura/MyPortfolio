@@ -38,7 +38,8 @@
         </div>
 
         <div class="p-pagenation">
-          <?php if( function_exists("the_pagination") ) the_pagination(); ?>
+          <?php wp_pagenavi(); ?>
+          <!--手書きの場合 <?php if( function_exists("the_pagination") ) the_pagination(); ?> -->
         </div>
     　</div>
       <?php get_sidebar(); ?>

@@ -84,25 +84,26 @@
     }
     add_action( 'after_setup_theme', 'register_hamburger_menus');
 
-    function the_pagination() {
-        global $wp_query;
-        $big = 999999999;
-        if ( $wp_query->max_num_pages <= 1 )
-            return;
-        echo '<nav class="pagination">';
-        echo paginate_links( array(
-            'base'         => str_replace( $big, '%#%', esc_url( get_pagenum_link($big) ) ),
-            'format'       => '',
-            'current'      => max( 1, get_query_var('paged') ),
-            'total'        => $wp_query->max_num_pages,
-            'prev_text'    => '<<',
-            'next_text'    => '>>',
-            'type'         => 'list',
-            'end_size'     => 4,
-            'mid_size'     => 4
-        ) );
-        echo '</nav>';
-        }
+    // 手書きの場合
+    // function the_pagination() {
+    //     global $wp_query;
+    //     $big = 999999999;
+    //     if ( $wp_query->max_num_pages <= 1 )
+    //         return;
+    //     echo '<nav class="pagination">';
+    //     echo paginate_links( array(
+    //         'base'         => str_replace( $big, '%#%', esc_url( get_pagenum_link($big) ) ),
+    //         'format'       => '',
+    //         'current'      => max( 1, get_query_var('paged') ),
+    //         'total'        => $wp_query->max_num_pages,
+    //         'prev_text'    => '<<',
+    //         'next_text'    => '>>',
+    //         'type'         => 'list',
+    //         'end_size'     => 4,
+    //         'mid_size'     => 4
+    //     ) );
+    //     echo '</nav>';
+    //     }
 
         function create_post_type() {
             register_post_type( 'item', [ // 投稿タイプ名

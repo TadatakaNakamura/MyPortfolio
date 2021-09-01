@@ -906,62 +906,52 @@ body {
   align-items: center;
   justify-content: center;
 }
-.p-pagenation ul {
-  display: flex;
-  align-items: center;
-}
-.p-pagenation ul li {
-  padding: 2px 12px;
-  font-size: 26px;
-  font-weight: 500;
-}
-.p-pagenation ul li .page-numbers {
-  display: block;
-  color: #3c2b1c;
-  border: solid 1px #3c2b1c;
-  padding: 10px;
-}
-@media (max-width: 850px) {
-  .p-pagenation ul li .page-numbers {
-    display: none;
-  }
-}
-.p-pagenation ul li .current {
-  border: solid 1px #3c2b1c;
-  background-color: #3c2b1c;
-  color: #fff;
-  padding: 8px;
-}
-.p-pagenation ul li .prev {
-  font-family: "mplus-1m-regular";
-  font-weight: 300;
+.p-pagenation .wp-pagenavi .pages,
+.p-pagenation .wp-pagenavi .previouspostslink,
+.p-pagenation .wp-pagenavi .nextpostslink {
   border: none;
 }
 @media (max-width: 850px) {
-  .p-pagenation ul li .prev {
-    display: block;
+  .p-pagenation .wp-pagenavi .pages,
+.p-pagenation .wp-pagenavi .page,
+.p-pagenation .wp-pagenavi .current {
+    display: none;
+  }
+}
+.p-pagenation .wp-pagenavi .previouspostslink,
+.p-pagenation .wp-pagenavi .nextpostslink {
+  font-size: 36px;
+}
+.p-pagenation .wp-pagenavi a,
+.p-pagenation .wp-pagenavi span {
+  margin: 8px;
+  padding: 8px 12px;
+  color: #707070;
+}
+.p-pagenation .wp-pagenavi .current {
+  border: solid 1px #3c2b1c;
+  background-color: #3c2b1c;
+  color: #fff;
+}
+@media (max-width: 850px) {
+  .p-pagenation .wp-pagenavi .previouspostslink {
+    font-size: 20px;
     position: absolute;
     left: 10px;
   }
-  .p-pagenation ul li .prev::after {
+  .p-pagenation .wp-pagenavi .previouspostslink::after {
     content: "前へ";
     padding-left: 10px;
   }
 }
-.p-pagenation ul li .next {
-  font-family: "mplus-1m-regular";
-  font-weight: 300;
-  border: none;
-}
 @media (max-width: 850px) {
-  .p-pagenation ul li .next {
-    display: block;
+  .p-pagenation .wp-pagenavi .nextpostslink {
+    font-size: 20px;
     position: absolute;
     right: 10px;
   }
-  .p-pagenation ul li .next::before {
+  .p-pagenation .wp-pagenavi .nextpostslink::before {
     content: "後へ";
-    font-family: "mplus-1m-regular";
     padding-right: 10px;
   }
 }

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   .wp-pagenavi {
+    position: relative;
     .pages,
     .previouspostslink,
     .nextpostslink {
@@ -20,6 +21,16 @@
     .previouspostslink,
     .nextpostslink{
       font-size: 36px;
+      position: absolute;
+      bottom: -24px;
+    }
+    .previouspostslink {
+      left: -58px;
+    }
+    .pages {
+      position: absolute;
+      left: -156px;
+      bottom: -16px;
     }
     a,
     span {

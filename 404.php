@@ -5,8 +5,8 @@
 
     <main class="l-main">
         <div class="l-main__left">
-            <div class="p-contents">
-                <h2>お探しのページが見つかりません</h2>
+            <div class="p-contents p-contents-404">
+                <h2>お探しのページが見つかりません。</h2>
             </div>
         </div>
         <?php get_sidebar(); ?>

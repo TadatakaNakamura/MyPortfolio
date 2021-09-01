@@ -629,6 +629,15 @@ body {
   align-items: center;
 }
 
+.p-contents-404 {
+  height: 300px;
+  position: relative;
+}
+.p-contents-404 h2 {
+  position: absolute;
+  top: 100px;
+}
+
 .p-branch-menu {
   height: 1400px;
   display: flex;
@@ -906,6 +915,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.p-pagenation .wp-pagenavi {
+  position: relative;
+}
 .p-pagenation .wp-pagenavi .pages,
 .p-pagenation .wp-pagenavi .previouspostslink,
 .p-pagenation .wp-pagenavi .nextpostslink {
@@ -921,6 +933,16 @@ body {
 .p-pagenation .wp-pagenavi .previouspostslink,
 .p-pagenation .wp-pagenavi .nextpostslink {
   font-size: 36px;
+  position: absolute;
+  bottom: -24px;
+}
+.p-pagenation .wp-pagenavi .previouspostslink {
+  left: -58px;
+}
+.p-pagenation .wp-pagenavi .pages {
+  position: absolute;
+  left: -156px;
+  bottom: -16px;
 }
 .p-pagenation .wp-pagenavi a,
 .p-pagenation .wp-pagenavi span {

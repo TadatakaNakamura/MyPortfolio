@@ -84,7 +84,7 @@
     }
     add_action( 'after_setup_theme', 'register_hamburger_menus');
 
-    // 手書きの場合
+    // 手書きナビゲーションの場合
     // function the_pagination() {
     //     global $wp_query;
     //     $big = 999999999;
@@ -108,13 +108,13 @@
         function create_post_type() {
             register_post_type( 'item', [ // 投稿タイプ名
                 'labels' => [
-                    'name'          => '商品', // 管理画面右側バーの表示名
-                    'singular_name' => 'item',    // カスタム投稿の識別名
+                    'name'          => '商品',
+                    'singular_name' => 'item',
                 ],
-                'public'        => true,  // 投稿タイプをpublicにする
-                'has_archive'   => true, // アーカイブ機能をつける
-                'menu_position' => 5,     // 管理画面右バーの配置場所
-                'menu_icon'     => 'dashicons-store', //管理画面右バーにつくアイコン設定
+                'public'        => true,
+                'has_archive'   => true,
+                'menu_position' => 5,
+                'menu_icon'     => 'dashicons-store',
                 'hierarchical'  => true,
                 'supports'      => [
                     'title',

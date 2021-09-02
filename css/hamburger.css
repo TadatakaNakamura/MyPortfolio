@@ -1173,7 +1173,7 @@ body {
   }
 }
 .p-mainvisual p {
-  font-size: 40px;
+  font-size: 32px;
   font-family: "mplus-1m-bold";
   color: #fff;
   padding-left: 86px;
@@ -1230,6 +1230,7 @@ body {
   }
 }
 .p-mainvisual-archive__text p {
+  font-size: 24px;
   color: #fff;
   font-family: "mplus-1m-bold";
 }
@@ -1468,9 +1469,8 @@ body {
 .p-menu-card__text--custom {
   width: 50%;
 }
-.p-menu-card__text--custom > h1 {
+.p-menu-card__text--custom > h2 {
   padding: 20px 0 20px 20px;
-  font-size: 40px;
   font-family: "mplus-1m-bold";
 }
 .p-menu-card__info {
@@ -1490,4 +1490,10 @@ body {
   width: 50%;
   height: 300px;
   object-fit: cover;
+}
+@media (max-width: 850px) {
+  .p-menu-card--custom {
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=hamburger.css.map */

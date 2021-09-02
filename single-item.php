@@ -16,7 +16,7 @@
                   <div class="p-menu-card--custom" id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
                     <?php the_post_thumbnail(); ?>
                     <div class="p-menu-card__text--custom">
-                      <h1><?php the_title(); ?></h1>
+                      <h2><?php the_title(); ?></h2>
                       <div class='p-menu-card__info'>
                         <p>価格：<?php $price = get_post_meta(get_the_ID(  ), '価格', true); ?><?php echo $price; ?>円（税込）</p>
                         <p>セット価格：<?php $setprice = get_post_meta(get_the_ID(  ), 'セット価格', true); ?><?php echo $setprice; ?>円（税込）</p>

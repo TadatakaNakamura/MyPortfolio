@@ -3,9 +3,8 @@
       width: 57%;
       &--custom{
           width: 50%;
-          >h1{
+          >h2{
               padding: 20px 0 20px 20px;
-              font-size: 40px;
               font-family: "mplus-1m-bold";
           }
       }
@@ -26,6 +25,10 @@
           width: 50%;
           height: 300px;
           object-fit: cover;
+      }
+      @include sp {
+        flex-direction: column;
+        align-items: center;
       }
   }
 }

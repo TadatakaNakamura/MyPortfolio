@@ -5,6 +5,7 @@
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <meta name="description" content="WordPress theme development static data for beginners">
   <meta name="keywords" content="WordPress, Theme, development">
+  <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
   <?php wp_head(); ?>
 </head>
 

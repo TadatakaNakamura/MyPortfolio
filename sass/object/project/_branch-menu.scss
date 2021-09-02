@@ -13,7 +13,7 @@
   &__wrap {
     position: relative;
     height: 1193px;
-    width: 625px;
+    width: auto;
     margin: 100px 60px;
     @include tab {
       height: 681px;
@@ -22,6 +22,9 @@
     }
     @include sp {
       width: 335px;
+    }
+    a{
+      color: #fff;
     }
     h2 {
       position: relative;

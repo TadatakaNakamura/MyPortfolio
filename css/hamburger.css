@@ -515,18 +515,17 @@ body {
   flex-direction: column;
   font-family: "mplus-1m-regular";
 }
-.l-footer__section {
-  padding-top: 43px;
-}
 .l-footer__section ul {
   display: flex;
 }
 .l-footer__section ul li {
   position: relative;
+  padding: 43px 10px;
 }
 .l-footer__section ul li::before {
   position: absolute;
-  top: 4px;
+  right: 118px;
+  bottom: 48px;
   content: "";
   background-color: #fff;
   width: 2px;
@@ -538,12 +537,10 @@ body {
 .l-footer__section ul li a {
   color: #fff;
   font-size: 20px;
-  padding: 43px 10px;
   position: relative;
 }
 .l-footer p {
   color: #fff;
-  padding-top: 39px;
   font-size: 14px;
 }
 
@@ -658,7 +655,7 @@ body {
 .p-branch-menu__wrap {
   position: relative;
   height: 1193px;
-  width: 625px;
+  width: auto;
   margin: 100px 60px;
 }
 @media (max-width: 1900px) {
@@ -672,6 +669,9 @@ body {
   .p-branch-menu__wrap {
     width: 335px;
   }
+}
+.p-branch-menu__wrap a {
+  color: #fff;
 }
 .p-branch-menu__wrap h2 {
   position: relative;

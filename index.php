@@ -11,7 +11,9 @@
 
           <div class="p-branch-menu">
             <div class="p-branch-menu__wrap takeout">
-              <h2>Take Out</h2>
+              <h2>
+                <a href="<?php echo esc_url(get_page_link(2)); ?>">Take Out</a>
+              </h2>
               <div class="p-box">
                 <div class="p-box__description">
                   <h4>Take OUT</h4>
@@ -24,9 +26,9 @@
               </div>
             </div>
             <div class="p-branch-menu__wrap eatin">
-              <div class="c-title">
-                <h2>Eat In</h2>
-              </div>
+              <h2>
+                <a href="<?php echo esc_url(get_page_link(2)); ?>">Take Out</a>
+              </h2>
               <div class="p-box">
                 <div class="p-box__description">
                   <h4>Take OUT</h4>

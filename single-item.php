@@ -18,8 +18,8 @@
                     <div class="p-menu-card__text--custom">
                       <h1><?php the_title(); ?></h1>
                       <div class='p-menu-card__info'>
-                        <p>価格：<?php $price = get_post_meta(get_the_ID(  ), '価格', true); ?><?php echo $price; ?>円</p>
-                        <p>アレルギー：<?php $allergie = get_post_meta(get_the_ID(  ), 'アレルギー', true); ?><?php echo $allergie; ?></p>
+                        <p>価格：<?php $price = get_post_meta(get_the_ID(  ), '価格', true); ?><?php echo $price; ?>円（税込）</p>
+                        <p>セット価格：<?php $setprice = get_post_meta(get_the_ID(  ), 'セット価格', true); ?><?php echo $setprice; ?>円（税込）</p>
                       </div>
                     </div>
                   </div>

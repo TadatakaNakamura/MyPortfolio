@@ -50,30 +50,66 @@
                 'after_title'   => "</h2>\n",
             )
         );
-        register_sidebar(
-            array(
-              'name'          => 'タグウィジェット',
-              'id'            => 'tag_widget',
-              'description'   => 'タグ用ウィジェットです',
-              'before_widget' => '<div id="%1$s" class="widget %2$s">',
-              'after_widget'  => '</div>',
-              'before_title'  => '<h2><i class="fa fa-tags" aria-hidden="true"></i>',
-              'after_title'   => "</h2>\n",
-            )
-          );
-          register_sidebar(
-            array(
-              'name'          => 'アーカイブウィジェット',
-              'id'            => 'archive_widget',
-              'description'   => 'アーカイブ用ウィジェットです',
-              'before_widget' => '<div id="%1$s" class="widget %2$s">',
-              'after_widget'  => '</div>',
-              'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
-              'after_title'   => "</h2>\n",
-            )
-          );
+        class WP_Widget_Categories_Taxonomy extends WP_Widget_Categories {
+            private $taxonomy = 'category';
+
+            public function widget( $args, $instance ) {
+                if ( !empty( $instance['taxonomy'] ) ) {
+                    $this->taxonomy = $instance['taxonomy'];
+                }
+
+                add_filter( 'widget_categories_dropdown_args', array( $this, 'add_taxonomy_dropdown_args' ), 10 );
+                add_filter( 'widget_categories_args', array( $this, 'add_taxonomy_dropdown_args' ), 10 );
+                parent::widget( $args, $instance );
+            }
+
+            public function update( $new_instance, $old_instance ) {
+                $instance = parent::update( $new_instance, $old_instance );
+                $taxonomies = $this->get_taxonomies();
+                $instance['taxonomy'] = 'category';
+                if ( in_array( $new_instance['taxonomy'], $taxonomies ) ) {
+                    $instance['taxonomy'] = $new_instance['taxonomy'];
+                }
+                return $instance;
+            }
+
+            public function form( $instance ) {
+                parent::form( $instance );
+                $taxonomy = 'category';
+                if ( !empty( $instance['taxonomy'] ) ) {
+                    $taxonomy = $instance['taxonomy'];
+                }
+                $taxonomies = $this->get_taxonomies();
+                ?>
+                <p>
+                    <label for="<?php echo $this->get_field_id( 'taxonomy' ); ?>"><?php _e( 'Taxonomy:' ); ?></label><br />
+                    <select id="<?php echo $this->get_field_id( 'taxonomy' ); ?>" name="<?php echo $this->get_field_name( 'taxonomy' ); ?>">
+                        <?php foreach ( $taxonomies as $value ) : ?>
+                        <option value="<?php echo esc_attr( $value ); ?>"<?php selected( $taxonomy, $value ); ?>><?php echo esc_attr( $value ); ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </p>
+                <?php
+            }
+
+            public function add_taxonomy_dropdown_args( $cat_args ) {
+                $cat_args['taxonomy'] = $this->taxonomy;
+                return $cat_args;
+            }
+
+            private function get_taxonomies() {
+                $taxonomies = get_taxonomies( array(
+                    'public' => true,
+                ) );
+                return $taxonomies;
+            }
+        }
+        unregister_widget( 'WP_Widget_Categories' );
+        register_widget( 'WP_Widget_Categories_Taxonomy' );
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
+
+
 
     // メニューの追加
     function register_hamburger_menus(){
@@ -84,26 +120,6 @@
     }
     add_action( 'after_setup_theme', 'register_hamburger_menus');
 
-    // 手書きナビゲーションの場合
-    // function the_pagination() {
-    //     global $wp_query;
-    //     $big = 999999999;
-    //     if ( $wp_query->max_num_pages <= 1 )
-    //         return;
-    //     echo '<nav class="pagination">';
-    //     echo paginate_links( array(
-    //         'base'         => str_replace( $big, '%#%', esc_url( get_pagenum_link($big) ) ),
-    //         'format'       => '',
-    //         'current'      => max( 1, get_query_var('paged') ),
-    //         'total'        => $wp_query->max_num_pages,
-    //         'prev_text'    => '<<',
-    //         'next_text'    => '>>',
-    //         'type'         => 'list',
-    //         'end_size'     => 4,
-    //         'mid_size'     => 4
-    //     ) );
-    //     echo '</nav>';
-    //     }
 
         function create_post_type() {
             register_post_type( 'item', [ // 投稿タイプ名
@@ -127,7 +143,9 @@
                 register_taxonomy('item_category', 'item',[
                     'labels' => [
                         'name' => '商品カテゴリー',
+                        'edit_item' => '商品カテゴリーを編集'
                 ],
+                'public' => true,
                 'hierarchical' => true,
                 'show in rest' => true,
                 ]);

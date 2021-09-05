@@ -1508,6 +1508,35 @@ body {
   }
 }
 
+.p-pagelink {
+  display: flex;
+  justify-content: center;
+}
+.p-pagelink p {
+  font-size: 1.4rem;
+}
+.p-pagelink p span, .p-pagelink p a {
+  padding: 5px;
+  border: solid 2px #3B2A10;
+  margin: 0 3px;
+}
+.p-pagelink p span {
+  color: #fff7ef;
+  background-color: #3B2A10;
+}
+.p-pagelink p a {
+  color: #3B2A10;
+}
+
+.p-article-tag a {
+  margin: 0 3px;
+  padding: 2px;
+  color: #fff7ff;
+  background-color: #707070;
+  border: solid 1px #707070;
+  border-radius: 5px;
+}
+
 .wp-caption, .gallery-caption {
   font-size: 10px;
 }

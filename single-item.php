@@ -24,6 +24,9 @@
                     </div>
                   </div>
                   <?php the_content();?>
+                  <div class="p-pagelink">
+                    <?php wp_link_pages( 'before=<p>&after=</p>&next_or_number=number&pagelink= %' ); ?>
+                  </div>
                 </div>
                 <?php endwhile;
                 else: ?>

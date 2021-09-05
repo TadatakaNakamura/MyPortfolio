@@ -10,10 +10,8 @@
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'automatic-feed-links' );
-        register_hamburger_menus( array(
-            'footer_nav'=>esc_html__('footer navigation','rtbread'),
-            'category_nav'=>esc_html__('category navigation','rtbread'),
-        ));
+        add_theme_support( 'custom-header' );//テーマチェックエラー解消のため
+        add_theme_support( 'custom-background');//テーマチェックエラー解消のため
     }
     add_action('after_setup_theme','custom_theme_support');
 
@@ -82,10 +80,10 @@
                 $taxonomies = $this->get_taxonomies();
                 ?>
                 <p>
-                    <label for="<?php echo $this->get_field_id( 'taxonomy' ); ?>"><?php _e( 'Taxonomy:' ); ?></label><br />
+                    <label for="<?php echo $this->get_field_id( 'taxonomy' ); ?>"><?php _e( 'Taxonomy:','hamburger' ); ?></label><br />
                     <select id="<?php echo $this->get_field_id( 'taxonomy' ); ?>" name="<?php echo $this->get_field_name( 'taxonomy' ); ?>">
                         <?php foreach ( $taxonomies as $value ) : ?>
-                        <option value="<?php echo esc_attr( $value ); ?>"<?php selected( $taxonomy, $value ); ?>><?php echo esc_attr( $value ); ?></option>
+                        <option value="<?php echo esc_attr( $value ); ?>"<?php selected( $taxonomy, $value ); ?>><?php echo esc_html( $value ); ?></option>
                         <?php endforeach; ?>
                     </select>
                 </p>
@@ -111,7 +109,7 @@
 
 
 
-    // メニューの追加
+    // 外観ーメニュー位置の追加
     function register_hamburger_menus(){
         register_nav_menus( array(
             'footer-menu' => 'FooterMenu',
@@ -136,7 +134,8 @@
                     'title',
                     'editor',
                     'thumbnail',
-                    'page-attributes'
+                    'page-attributes',
+                    'comments'//「コメントを許可」を追加
                 ]
                 ]);
 
@@ -152,3 +151,9 @@
             }
         add_action( 'init', 'create_post_type' );
 
+        function wpdocs_theme_add_editor_styles() {
+            add_editor_style( 'custom-editor-style.css' );
+        }
+        add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );//テーマチェック項目解消のため
+
+        if ( ! isset( $content_width ) ) $content_width = 2000;//コンテンツ幅の定義

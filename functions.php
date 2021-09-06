@@ -11,7 +11,11 @@
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'custom-header' );//テーマチェックエラー解消のため
-        add_theme_support( 'custom-background');//テーマチェックエラー解消のため
+        add_theme_support( 'custom-background');//以下５項目全て
+        add_theme_support( 'wp-block-styles' );
+        add_theme_support( 'responsive-embeds' );
+        add_theme_support( 'align-wide' );
+        add_theme_support( 'custom-logo' );
     }
     add_action('after_setup_theme','custom_theme_support');
 
@@ -119,41 +123,41 @@
     add_action( 'after_setup_theme', 'register_hamburger_menus');
 
 
-        function create_post_type() {
-            register_post_type( 'item', [ // 投稿タイプ名
-                'labels' => [
-                    'name'          => '商品',
-                    'singular_name' => 'item',
-                ],
-                'public'        => true,
-                'has_archive'   => true,
-                'menu_position' => 5,
-                'menu_icon'     => 'dashicons-store',
-                'hierarchical'  => true,
-                'supports'      => [
-                    'title',
-                    'editor',
-                    'thumbnail',
-                    'page-attributes',
-                    'comments'//「コメントを許可」を追加
-                ]
-                ]);
+        // function create_post_type() {
+        //     register_post_type( 'item', [ // 投稿タイプ名
+        //         'labels' => [
+        //             'name'          => '商品',
+        //             'singular_name' => 'item',
+        //         ],
+        //         'public'        => true,
+        //         'has_archive'   => true,
+        //         'menu_position' => 5,
+        //         'menu_icon'     => 'dashicons-store',
+        //         'hierarchical'  => true,
+        //         'supports'      => [
+        //             'title',
+        //             'editor',
+        //             'thumbnail',
+        //             'page-attributes',
+        //             'comments'//「コメントを許可」を追加
+        //         ]
+        //         ]);
 
-                register_taxonomy('item_category', 'item',[
-                    'labels' => [
-                        'name' => '商品カテゴリー',
-                        'edit_item' => '商品カテゴリーを編集'
-                ],
-                'public' => true,
-                'hierarchical' => true,
-                'show in rest' => true,
-                ]);
-            }
-        add_action( 'init', 'create_post_type' );
+        //         register_taxonomy('item_category', 'item',[
+        //             'labels' => [
+        //                 'name' => '商品カテゴリー',
+        //                 'edit_item' => '商品カテゴリーを編集'
+        //         ],
+        //         'public' => true,
+        //         'hierarchical' => true,
+        //         'show in rest' => true,
+        //         ]);
+        //     }
+        // add_action( 'init', 'create_post_type' );
 
         function wpdocs_theme_add_editor_styles() {
             add_editor_style( 'custom-editor-style.css' );
         }
         add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );//テーマチェック項目解消のため
 
-        if ( ! isset( $content_width ) ) $content_width = 2000;//コンテンツ幅の定義
+        if ( ! isset( $content_width ) ) $content_width = 1920;//コンテンツ幅の定義

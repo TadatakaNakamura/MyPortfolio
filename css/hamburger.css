@@ -385,6 +385,7 @@ body {
 .l-header__title a {
   color: #707070;
   font-size: 2.2em;
+  z-index: 200;
 }
 @media (max-width: 850px) {
   .l-header__title a {
@@ -1105,7 +1106,6 @@ body {
 .p-bar {
   display: none;
   top: 20px;
-  height: 60px;
   width: 100%;
   position: fixed;
   text-align: right;

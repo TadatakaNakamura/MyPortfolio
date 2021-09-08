@@ -12,30 +12,38 @@
           <div class="p-branch-menu">
             <div class="p-branch-menu__wrap takeout">
               <h2>
-                <a href="<?php echo esc_url(get_page_link(2)); ?>">Take Out</a>
+                <a href="<?php echo esc_url(get_page_link(212)); ?>">Take Out</a>
               </h2>
               <div class="p-box">
                 <div class="p-box__description">
-                  <h4>Take OUT</h4>
+                  <h4>
+                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
+                  </h4>
                   <p>当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
                 <div class="p-box__description">
-                  <h4>Take OUT</h4>
+                  <h4>
+                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
+                  </h4>
                   <p>当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
               </div>
             </div>
             <div class="p-branch-menu__wrap eatin">
               <h2>
-                <a href="<?php echo esc_url(get_page_link(2)); ?>">Take Out</a>
+                <a href="<?php echo esc_url(get_page_link(214)); ?>">Eat In</a>
               </h2>
               <div class="p-box">
                 <div class="p-box__description">
-                  <h4>Take OUT</h4>
+                  <h4>
+                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
+                  </h4>
                   <p>当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
                 <div class="p-box__description">
-                  <h4>Take OUT</h4>
+                  <h4>
+                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
+                  </h4>
                   <p>当店のテイクアウトで利用できる商品を掲載しています</p>
                 </div>
               </div>

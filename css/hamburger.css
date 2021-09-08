@@ -655,7 +655,7 @@ body {
 .p-branch-menu__wrap {
   position: relative;
   height: 1193px;
-  width: auto;
+  width: 625px;
   margin: 100px 60px;
 }
 @media (max-width: 1900px) {

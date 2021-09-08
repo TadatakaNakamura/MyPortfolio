@@ -1605,7 +1605,12 @@ body {
   }
 }
 
-.wp-caption, .gallery-caption {
+.is-stacked-on-mobile figure img {
+  width: auto;
+}
+
+.wp-caption,
+.gallery-caption {
   font-size: 10px;
 }
 
@@ -1672,4 +1677,8 @@ body {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */
+}
+
+.gazou-100 {
+  width: 1000px;
 }/*# sourceMappingURL=hamburger.css.map */

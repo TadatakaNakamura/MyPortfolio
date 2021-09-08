@@ -2,10 +2,8 @@
 <html lang="<?php language_attributes(); ?>">
 
   <?php get_header(); ?>
-
-      　<div class="p-contents">
-
-          <div class="p-mainvisual-archive">
+    <div class="p-contents">
+        <div class="p-mainvisual-archive">
             <div class="p-mainvisual-archive__text">
               <h2>MENU：</h2>
               <p><?php single_cat_title(); ?></p>

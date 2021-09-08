@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>">
-
   <?php get_header(); ?>
-
             <div class="p-contents">
 
               <div class="p-mainvisual-single">

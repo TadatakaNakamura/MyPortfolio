@@ -1,8 +1,17 @@
-.wp-caption, .gallery-caption{
+.is-stacked-on-mobile {
+  figure {
+    img {
+      width: auto;
+    }
+  }
+}
+
+.wp-caption,
+.gallery-caption {
   font-size: 10px;
 }
 
-.wp-caption-text{
+.wp-caption-text {
   margin-top: -20px;
 }
 
@@ -11,7 +20,7 @@
   border: solid 2px rgb(255, 192, 98);
 }
 
-.bypostauthor{
+.bypostauthor {
   background-color: #fff7ef;
 }
 
@@ -32,35 +41,38 @@
   margin-right: auto;
 }
 
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
-	background-color: #eee;
-	clip: auto !important;
-	clip-path: none;
-	color: #444;
-	display: block;
-	font-size: 1em;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+.gazou-100 {
+  width: 1000px;
 }

@@ -1,7 +1,18 @@
-.is-stacked-on-mobile {
+.image-1 {
   figure {
-    img {
-      width: auto;
+    img{
+      width: 1353px;
+      height: 500px;
+      object-fit: cover;
+      object-position: 100% 100%;
+      @include tab {
+        width: 741px;
+        height: 264px;
+      }
+      @include sp {
+        width: 335px;
+        height: 124px;
+      }
     }
   }
 }

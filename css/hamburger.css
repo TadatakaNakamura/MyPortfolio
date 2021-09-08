@@ -1605,8 +1605,23 @@ body {
   }
 }
 
-.is-stacked-on-mobile figure img {
-  width: auto;
+.image-1 figure img {
+  width: 1353px;
+  height: 500px;
+  object-fit: cover;
+  object-position: 100% 100%;
+}
+@media (max-width: 1900px) {
+  .image-1 figure img {
+    width: 741px;
+    height: 264px;
+  }
+}
+@media (max-width: 850px) {
+  .image-1 figure img {
+    width: 335px;
+    height: 124px;
+  }
 }
 
 .wp-caption,

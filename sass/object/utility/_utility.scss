@@ -1,6 +1,8 @@
+// 固定ページ
+
 .image-1 {
   figure {
-    img{
+    img {
       width: 1353px;
       height: 500px;
       object-fit: cover;
@@ -17,6 +19,57 @@
   }
 }
 
+.wp-block-media-text {
+  margin: 10px auto;
+  figure {
+    padding-top: 0;
+    img {
+      @include sp {
+        width: 200px;
+        height: 120px;
+      }
+    }
+  }
+  p {
+    padding-top: 0;
+  }
+}
+
+.image-2 {
+  figure {
+    justify-content: flex-end;
+  }
+}
+
+.image-3 {
+  figure {
+    justify-content: flex-start;
+  }
+}
+
+.wp-block-column {
+  figure {
+    img {
+      width: 349px;
+      height: 205px;
+    }
+  }
+}
+
+.wp-block-image {
+  img {
+    margin: 0 auto;
+  }
+}
+
+.p-article {
+  figure {
+    padding: 0;
+  }
+}
+
+
+// テーマチェックエラー解消用
 .wp-caption,
 .gallery-caption {
   font-size: 10px;

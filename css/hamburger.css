@@ -1624,6 +1624,43 @@ body {
   }
 }
 
+.wp-block-media-text {
+  margin: 10px auto;
+}
+.wp-block-media-text figure {
+  padding-top: 0;
+}
+@media (max-width: 850px) {
+  .wp-block-media-text figure img {
+    width: 200px;
+    height: 120px;
+  }
+}
+.wp-block-media-text p {
+  padding-top: 0;
+}
+
+.image-2 figure {
+  justify-content: flex-end;
+}
+
+.image-3 figure {
+  justify-content: flex-start;
+}
+
+.wp-block-column figure img {
+  width: 349px;
+  height: 205px;
+}
+
+.wp-block-image img {
+  margin: 0 auto;
+}
+
+.p-article figure {
+  padding: 0;
+}
+
 .wp-caption,
 .gallery-caption {
   font-size: 10px;

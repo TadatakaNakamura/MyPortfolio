@@ -8,6 +8,9 @@
     background: url(../img/mainvisual-img/mainvisual-tab.png) no-repeat;
     background-size: cover;
   }
+  @include sp {
+    background: url(../img/mainvisual-img/mainvisual-tab.png) no-repeat right;
+  }
   p {
     font-size: 32px;
     font-family: "mplus-1m-bold";
@@ -16,6 +19,9 @@
     padding-top: 259px;
     @include tab {
       padding-top: 130px;
+    }
+    @include sp {
+      padding-left: 40px;
     }
   }
 }
@@ -33,6 +39,10 @@
     background: url(../img/mainvisual-img/archive-top.png) no-repeat;
     background-size: cover;
   }
+  @include sp {
+    background: url(../img/mainvisual-img/archive-top.png) no-repeat center;
+    background-size: cover;
+  }
   &::before {
     position: absolute;
     content: "";
@@ -45,8 +55,9 @@
     display: flex;
     align-items: center;
     @include sp {
-      padding-left: 37px;
+      padding-left: 30px;
       flex-direction: column;
+      align-items: stretch;
     }
     h2 {
       margin-left: 50px;
@@ -54,6 +65,7 @@
       color: #fff;
       @include sp {
         font-size: 36px;
+        margin-left: 0;
       }
     }
     p {
@@ -85,6 +97,7 @@
     padding-left: 86px;
     @include sp {
       font-size: 40px;
+      padding-left: 40px;
     }
   }
 }

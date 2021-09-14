@@ -380,6 +380,7 @@ body {
 @media (max-width: 850px) {
   .l-header__title {
     margin-top: 36px;
+    margin-left: 0;
   }
 }
 .l-header__title a {
@@ -1172,6 +1173,11 @@ body {
     background-size: cover;
   }
 }
+@media (max-width: 850px) {
+  .p-mainvisual {
+    background: url(../img/mainvisual-img/mainvisual-tab.png) no-repeat right;
+  }
+}
 .p-mainvisual p {
   font-size: 32px;
   font-family: "mplus-1m-bold";
@@ -1182,6 +1188,11 @@ body {
 @media (max-width: 1900px) {
   .p-mainvisual p {
     padding-top: 130px;
+  }
+}
+@media (max-width: 850px) {
+  .p-mainvisual p {
+    padding-left: 40px;
   }
 }
 
@@ -1201,6 +1212,12 @@ body {
     background-size: cover;
   }
 }
+@media (max-width: 850px) {
+  .p-mainvisual-archive {
+    background: url(../img/mainvisual-img/archive-top.png) no-repeat center;
+    background-size: cover;
+  }
+}
 .p-mainvisual-archive::before {
   position: absolute;
   content: "";
@@ -1215,8 +1232,9 @@ body {
 }
 @media (max-width: 850px) {
   .p-mainvisual-archive__text {
-    padding-left: 37px;
+    padding-left: 30px;
     flex-direction: column;
+    align-items: stretch;
   }
 }
 .p-mainvisual-archive__text h2 {
@@ -1227,6 +1245,7 @@ body {
 @media (max-width: 850px) {
   .p-mainvisual-archive__text h2 {
     font-size: 36px;
+    margin-left: 0;
   }
 }
 .p-mainvisual-archive__text p {
@@ -1263,6 +1282,7 @@ body {
 @media (max-width: 850px) {
   .p-mainvisual-single h1, .p-mainvisual-page h1 {
     font-size: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -1450,6 +1470,11 @@ body {
   font-size: 36px;
   font-weight: 700;
 }
+@media (max-width: 850px) {
+  .p-map__wrap h3 {
+    font-size: 30px;
+  }
+}
 .p-map__wrap h3::after {
   position: absolute;
   content: "";
@@ -1479,18 +1504,39 @@ body {
 .p-menu-card__text--custom {
   width: 50%;
 }
+@media (max-width: 850px) {
+  .p-menu-card__text--custom {
+    width: 80%;
+  }
+}
 .p-menu-card__text--custom > h2 {
   padding: 20px 0 20px 20px;
   font-family: "mplus-1m-bold";
+}
+@media (max-width: 850px) {
+  .p-menu-card__text--custom > h2 {
+    padding: 10px 0 10px 10px;
+    font-size: 28px;
+  }
 }
 .p-menu-card__info {
   width: 100%;
   padding: 30px 20px;
 }
+@media (max-width: 850px) {
+  .p-menu-card__info {
+    padding: 10px 10px;
+  }
+}
 .p-menu-card__info > p {
   font-size: 20px;
   padding: 10px 0;
   font-family: "mplus-1m-normal";
+}
+@media (max-width: 850px) {
+  .p-menu-card__info > p {
+    font-size: 16px;
+  }
 }
 .p-menu-card--custom {
   display: flex;
@@ -1500,6 +1546,11 @@ body {
   width: 50%;
   height: 300px;
   object-fit: cover;
+}
+@media (max-width: 850px) {
+  .p-menu-card--custom img {
+    width: 80%;
+  }
 }
 @media (max-width: 850px) {
   .p-menu-card--custom {
@@ -1659,6 +1710,17 @@ body {
 
 .p-article figure {
   padding: 0;
+}
+
+@media (max-width: 1900px) {
+  .wp-block-button__link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 850px) {
+  .wp-block-button__link {
+    font-size: 0.5px;
+  }
 }
 
 .wp-caption,

@@ -68,6 +68,15 @@
   }
 }
 
+.wp-block-button__link {
+  @include tab {
+    font-size: 14px;
+  }
+  @include sp {
+    font-size: 0.5px;
+  }
+}
+
 
 // テーマチェックエラー解消用
 .wp-caption,

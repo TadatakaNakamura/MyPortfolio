@@ -1259,20 +1259,23 @@ body {
   }
 }
 
-.p-mainvisual-single, .p-mainvisual-page {
+.p-mainvisual-single,
+.p-mainvisual-page {
   width: 100%;
   height: 500px;
   display: flex;
   align-items: center;
 }
 @media (max-width: 850px) {
-  .p-mainvisual-single, .p-mainvisual-page {
+  .p-mainvisual-single,
+.p-mainvisual-page {
     height: 225px;
     display: flex;
     align-items: center;
   }
 }
-.p-mainvisual-single h1, .p-mainvisual-page h1 {
+.p-mainvisual-single h1,
+.p-mainvisual-page h1 {
   color: #fff;
   font-family: "mplus-1m-bold";
   font-size: 60px;
@@ -1280,7 +1283,8 @@ body {
   padding-left: 86px;
 }
 @media (max-width: 850px) {
-  .p-mainvisual-single h1, .p-mainvisual-page h1 {
+  .p-mainvisual-single h1,
+.p-mainvisual-page h1 {
     font-size: 40px;
     padding-left: 40px;
   }

@@ -6,48 +6,16 @@
         <div class="p-contents">
 
           <div class="p-mainvisual">
-            <p>ダミーサイト</p>
+            <div class="p-mainvisual__article">
+              <h2>About</h2>
+              <p>本文が入ります</p>
+            </div>
+            <img src="" alt="">
           </div>
 
-          <div class="p-branch-menu">
-            <div class="p-branch-menu__wrap takeout">
-              <h2>
-                <a href="<?php echo esc_url(get_page_link(212)); ?>">Take Out</a>
-              </h2>
-              <div class="p-box">
-                <div class="p-box__description">
-                  <h4>
-                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
-                  </h4>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-                </div>
-                <div class="p-box__description">
-                  <h4>
-                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
-                  </h4>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-branch-menu__wrap eatin">
-              <h2>
-                <a href="<?php echo esc_url(get_page_link(214)); ?>">Eat In</a>
-              </h2>
-              <div class="p-box">
-                <div class="p-box__description">
-                  <h4>
-                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
-                  </h4>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-                </div>
-                <div class="p-box__description">
-                  <h4>
-                    <a href="<?php echo esc_url(get_page_link(212)); ?>">Take OUT</a>
-                  </h4>
-                  <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-                </div>
-              </div>
-            </div>
+          <div class="p-contents__main"></div>
+
+
 
           </div>
           <div class="p-map">
@@ -62,8 +30,6 @@
           </div>
         </div>
       </div>
-      <?php get_sidebar(); ?>
-    </main>
 
     <?php wp_footer(); ?>
   </body>

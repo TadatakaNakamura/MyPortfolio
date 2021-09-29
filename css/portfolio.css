@@ -355,13 +355,37 @@ body {
 }
 
 .l-header {
-  background-color: aqua;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header__title {
+  font-size: 38px;
+  padding-left: 30px;
+}
+.l-header__menu {
+  display: flex;
+}
+.l-header__menu a {
+  font-size: 32px;
+  padding: 0 20px;
 }
 
 .l-main {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+
+.p-contents {
+  display: flex;
+  flex-direction: column;
+}
+.p-contents__menu {
+  display: flex;
+  align-items: center;
 }
 
 .p-branch-menu {

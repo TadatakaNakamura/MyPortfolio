@@ -1,1 +1,8 @@
-
+.p-contents {
+  display: flex;
+  flex-direction: column;
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+}

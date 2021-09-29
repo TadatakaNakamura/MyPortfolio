@@ -21,6 +21,10 @@
         </div>
 
         <div class="l-header__menu">
-          <a href="">home</a>
+          <a href="">About</a>
+          <a href="">Skills</a>
+          <a href="">Works</a>
+          <a href="">Price</a>
+          <a href="">Contact</a>
         </div>
       </header>

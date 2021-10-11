@@ -16,6 +16,8 @@
         <div class="p-contents__main">
           <div class="p-contents__main__top">
             <h2>Skils</h2>
+              <div class="p-logos">
+              </div>
             <p>本文が入ります</p>
           </div>
           <div class="p-contents__main__middle">

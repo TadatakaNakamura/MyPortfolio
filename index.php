@@ -34,18 +34,21 @@
             <div class="p-price-list">
               <div class="p-price-list__1">
                 <h3>コーディング</h3>
-                <p>価格１</p>
-                <p>価格２</p>
+                <p>トップページ</p>
+                <p>下層ページ</p>
+                <p>レスポンシブ対応</p>
+                <p>jQuery実装</p>
               </div>
               <div class="p-price-list__2">
                 <h3>WordPress実装</h3>
-                <p>価格１</p>
-                <p>価格２</p>
+                <p>既存テーマ利用</p>
+                <p>オリジナルテーマ利用</p>
+                <p>保守セットの場合は初期費用のお値引きをさせていただきます</p>
               </div>
               <div class="p-price-list__3">
                 <h3>その他</h3>
-                <p>価格１</p>
-                <p>価格２</p>
+                <p>サイト運用保守</p>
+                <p>静的サイトのWordPress移行</p>
               </div>
             </div>
           </div>

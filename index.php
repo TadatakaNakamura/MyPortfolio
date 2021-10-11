@@ -8,23 +8,28 @@
         <div class="p-mainvisual">
           <div class="p-mainvisual__article">
             <h2>About</h2>
-            <p>本文が入ります</p>
+            <p>2012年立教大学経営学部|2016年営業|2019年独立|2021年RaiseTech/WSSスクール</p>
           </div>
           <img src="" alt="">
         </div>
 
         <div class="p-contents__main">
           <div class="p-contents__main__top">
-            <h2>Skils</h2>
+            <h2>Servise</h2>
+            <p>サイトの制作・運用、静的サイトのWordPress化等、Webサイト制作全般に対応いたします。</p>
+            <p>個人の方も大歓迎です。完成まで、責任を持って丁寧に対応させていただきます。</p>
+          </div>
+          <div class="p-contents__main__middle">
+          　<h2>Skils</h2>
               <div class="p-logos">
               </div>
             <p>本文が入ります</p>
           </div>
-          <div class="p-contents__main__middle">
-            <h2>Works</h2>
-            <p>2つの画像（カスタム投稿？？）</p>
-          </div>
           <div class="p-contents__main__bottom">
+          　<h2>Works</h2>
+          　<p>2つの画像（カスタム投稿？？）</p>
+          </div>
+          <div class="p-contents__main__price">
             <h2>Price</h2>
             <div class="p-price-list">
               <div class="p-price-list__1">

@@ -355,22 +355,22 @@ body {
 }
 
 .l-header {
-  height: 150px;
+  height: 120px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .l-header__title {
-  font-size: 38px;
-  padding-left: 30px;
+  font-size: 30px;
+  padding-left: 23px;
 }
 .l-header__menu {
   display: flex;
 }
 .l-header__menu a {
-  font-size: 32px;
-  padding: 0 20px;
+  font-size: 22px;
+  padding: 0 16px;
 }
 
 .l-main {
@@ -380,12 +380,13 @@ body {
 }
 
 .p-contents {
+  width: 100%;
+}
+.p-contents__main {
   display: flex;
   flex-direction: column;
-}
-.p-contents__menu {
-  display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .p-branch-menu {

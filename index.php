@@ -10,7 +10,8 @@
             <h2>About</h2>
             <p>2012年立教大学経営学部|2016年営業|2019年独立|2021年RaiseTech/WSSスクール</p>
           </div>
-          <img src="" alt="">
+          <div class="p-mainvisual__img"></div>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/top.jpg" alt="">
         </div>
 
         <div class="p-contents__main">
@@ -31,26 +32,55 @@
           </div>
           <div class="p-contents__main__price">
             <h2>Price</h2>
-            <div class="p-price-list">
-              <div class="p-price-list__1">
-                <h3>コーディング</h3>
-                <p>トップページ</p>
-                <p>下層ページ</p>
-                <p>レスポンシブ対応</p>
-                <p>jQuery実装</p>
+            <table class="c-table">
+              <div class="c-table__1">
+                <tr>
+                  <th class="c-table__1__title c-table__title">コーディング</th>
+                </tr>
+                <tr>
+                  <th>トップページ</th>
+                  <th>20,000円〜</th>
+                </tr>
+                <tr>
+                  <th>下層ページ</th>
+                  <th>20,000円〜</th>
+                </tr>
+                <tr>
+                  <th>レスポンシブ対応</th>
+                  <th>20,000円〜</th>
+                </tr>
+                <tr>
+                  <th>jQuery実装</th>
+                  <th>10,000円〜</th>
+                </tr>
               </div>
-              <div class="p-price-list__2">
-                <h3>WordPress実装</h3>
-                <p>既存テーマ利用</p>
-                <p>オリジナルテーマ利用</p>
-                <p>保守セットの場合は初期費用のお値引きをさせていただきます</p>
+              <div class="c-table__2">
+                <tr>
+                  <th class="c-table__2__title c-table__title">WordPress実装</th>
+                </tr>
+                <tr>
+                  <th>既存テーマ利用</th>
+                  <th>50,000円〜</th>
+                </tr>
+                <tr>
+                  <th>オリジナルテーマ利用</th>
+                  <th>100,000円〜</th>
+                </tr>
               </div>
-              <div class="p-price-list__3">
-                <h3>その他</h3>
-                <p>サイト運用保守</p>
-                <p>静的サイトのWordPress移行</p>
+              <div class="c-table__3">
+                <tr>
+                  <th class="c-table__3__title c-table__title">その他</th>
+                </tr>
+                <tr>
+                  <th>サイト運営保守</th>
+                  <th>月額5,000円〜</th>
+                </tr>
+                <tr>
+                  <th>静的サイトのWordPress化</th>
+                  <th>15,000円〜</th>
+                </tr>
               </div>
-            </div>
+            </table>
           </div>
         </div>
 

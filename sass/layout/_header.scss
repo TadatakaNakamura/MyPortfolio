@@ -5,14 +5,14 @@
   justify-content: space-between;
   align-items: center;
   &__title {
-    font-size: 30px;
+    font-size: 32px;
     padding-left: 23px;
   }
   &__menu {
     display: flex;
     a {
-      font-size: 22px;
-      padding: 0 16px;
+      font-size: 26px;
+      padding: 0 18px;
     }
   }
 }

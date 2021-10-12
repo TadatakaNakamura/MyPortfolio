@@ -1,0 +1,10 @@
+.c-table {
+  width: 100%;
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin: 0 auto;
+  }
+}

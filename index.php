@@ -10,8 +10,7 @@
             <h2>About</h2>
             <p>2012年立教大学経営学部|2016年営業|2019年独立|2021年RaiseTech/WSSスクール</p>
           </div>
-          <div class="p-mainvisual__img"></div>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/top.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/kari.jpg" alt="">
         </div>
 
         <div class="p-contents__main">

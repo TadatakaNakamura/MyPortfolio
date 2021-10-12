@@ -444,7 +444,7 @@ body {
   text-align: center;
 }
 .p-contents__main h2 {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -458,7 +458,7 @@ body {
   height: 650px;
 }
 .p-contents__main__price {
-  width: 600px;
+  width: 70%;
 }
 
 .p-branch-menu {
@@ -557,74 +557,20 @@ body {
   }
 }
 
-.p-box {
-  position: absolute;
-  bottom: 0;
+.p-reference {
+  display: flex;
+  flex-direction: column;
 }
-.p-box__description {
-  height: 174px;
-  width: 585px;
-  margin: 0 20px 20px;
-  background: rgba(234, 234, 234, 0.8);
+.p-reference h2 {
+  margin: 50px auto 20px auto;
 }
-@media (max-width: 1900px) {
-  .p-box__description {
-    height: 172px;
-    width: 320px;
-  }
-}
-@media (max-width: 850px) {
-  .p-box__description {
-    height: 163px;
-    width: 314px;
-    margin: 10px;
-  }
-}
-.p-box__description h4 {
-  z-index: 500;
-  font-size: 28px;
-  font-family: "mplus-1m-bold";
-  padding: 22px 19px;
-  color: white;
-}
-@media (max-width: 850px) {
-  .p-box__description h4 {
-    font-size: 18px;
-    padding: 16px 13px;
-  }
-}
-.p-box__description p {
-  z-index: 500;
-  font-size: 16px;
-  font-family: "mplus-1m-regular";
-  padding: 9px 19px;
-  line-height: 1.5;
+.p-reference button {
+  width: 300px;
+  height: 50px;
   color: #fff;
-}
-@media (max-width: 850px) {
-  .p-box__description p {
-    font-size: 12px;
-    padding: 6px 13px;
-  }
-}
-.p-box-archivepage {
-  padding: 70px 100px;
-}
-@media (max-width: 1900px) {
-  .p-box-archivepage {
-    padding: 50px;
-  }
-}
-.p-box-archivepage h4 {
-  font-family: "mplus-1m-bold";
-  font-size: 34px;
-  font-weight: 500;
-}
-.p-box-archivepage p {
-  font-family: "mplus-1m-regular";
-  font-size: 14px;
-  padding-top: 33px;
-  line-height: 1.8;
+  background-color: #0D4FAF;
+  border-radius: 40%;
+  margin: 20px auto 20px auto;
 }
 
 .p-menu__card {
@@ -986,10 +932,16 @@ body {
 
 .p-mainvisual {
   height: 550px;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
-.p-mainvisual__img {
-  background: url(../img/top.jpg) no-repeat;
-  height: 100px;
+.p-mainvisual__article h2 {
+  margin-bottom: 20px;
+}
+.p-mainvisual img {
+  height: 100%;
+  width: 65%;
 }
 
 .p-article {

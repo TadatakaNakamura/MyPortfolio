@@ -319,11 +319,11 @@ progress {
 }
 
 p {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 * {
@@ -395,7 +395,8 @@ body {
   justify-content: space-between;
 }
 .c-table th {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 500;
 }
 .c-table__title {
   margin: 0 auto;
@@ -444,8 +445,8 @@ body {
   text-align: center;
 }
 .p-contents__main h2 {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 .p-contents__main__top {
@@ -562,7 +563,7 @@ body {
   flex-direction: column;
 }
 .p-reference h2 {
-  margin: 50px auto 20px auto;
+  margin: 100px auto 20px auto;
 }
 .p-reference button {
   width: 300px;
@@ -937,7 +938,7 @@ body {
   align-items: center;
 }
 .p-mainvisual__article h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .p-mainvisual img {
   height: 100%;

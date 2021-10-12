@@ -20,11 +20,11 @@
           </a>
         </div>
 
-        <div class="l-header__menu">
-          <a href="">About</a>
-          <a href="">Skills</a>
-          <a href="">Works</a>
-          <a href="">Price</a>
-          <a href="">Contact</a>
-        </div>
+        <nav class="l-header__menu">
+          <li><a href="">About</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">Works</a></li>
+          <li><a href="">Price</a></li>
+          <li><a href="">Contact</a></li>
+        </nav>
       </header>

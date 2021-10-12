@@ -32,8 +32,8 @@
           </div>
           <div class="p-contents__main__price">
             <h2>Price</h2>
-            <table class="c-table">
-              <div class="c-table__1">
+            <div class="c-table">
+              <table class="c-table__1">
                 <tr>
                   <th class="c-table__1__title c-table__title">コーディング</th>
                 </tr>
@@ -53,8 +53,8 @@
                   <th>jQuery実装</th>
                   <th>10,000円〜</th>
                 </tr>
-              </div>
-              <div class="c-table__2">
+              </table>
+              <table class="c-table__2">
                 <tr>
                   <th class="c-table__2__title c-table__title">WordPress実装</th>
                 </tr>
@@ -66,8 +66,8 @@
                   <th>オリジナルテーマ利用</th>
                   <th>100,000円〜</th>
                 </tr>
-              </div>
-              <div class="c-table__3">
+              </table>
+              <table class="c-table__3">
                 <tr>
                   <th class="c-table__3__title c-table__title">その他</th>
                 </tr>
@@ -79,8 +79,8 @@
                   <th>静的サイトのWordPress化</th>
                   <th>15,000円〜</th>
                 </tr>
-              </div>
-            </table>
+              </table>
+            </div>
           </div>
         </div>
 

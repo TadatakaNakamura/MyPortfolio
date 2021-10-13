@@ -1,0 +1,15 @@
+.p-logos {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__item {
+    height: 280px;
+    width: 25%;
+    img {
+      height: 210px;
+      width: 160px;
+    }
+  }
+}

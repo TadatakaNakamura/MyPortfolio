@@ -453,7 +453,7 @@ body {
   height: 250px;
 }
 .p-contents__main__middle {
-  height: 600px;
+  height: auto;
 }
 .p-contents__main__bottom {
   height: 650px;
@@ -569,9 +569,16 @@ body {
   width: 300px;
   height: 50px;
   color: #fff;
-  background-color: #0D4FAF;
-  border-radius: 40%;
+  background-color: #3b78fd;
+  border-radius: 30px;
   margin: 20px auto 20px auto;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.p-reference button:hover {
+  color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 0 3px 2px;
 }
 
 .p-menu__card {
@@ -875,31 +882,20 @@ body {
   font-weight: bold;
 }
 
-.p-bar {
-  display: none;
-  top: 20px;
-  width: 100%;
-  position: fixed;
-  text-align: right;
-  z-index: 100;
+.p-logos {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.p-bar__button {
-  font-size: 30px;
-  font-weight: bold;
-  color: #707070;
-  position: absolute;
-  right: 30px;
-  cursor: pointer;
+.p-logos__item {
+  height: 280px;
+  width: 25%;
 }
-@media (max-width: 850px) {
-  .p-bar__button {
-    font-size: 24px;
-  }
-}
-@media (max-width: 1900px) {
-  .p-bar {
-    display: block;
-  }
+.p-logos__item img {
+  height: 210px;
+  width: 160px;
 }
 
 .p-search-form__box {

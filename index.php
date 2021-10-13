@@ -22,6 +22,38 @@
           <div class="p-contents__main__middle">
             <h2>Skils</h2>
               <div class="p-logos">
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/html-5.svg" alt="HTMLのロゴ">
+                  <p>HTML5</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/css-3.svg" alt="CSSのロゴ">
+                  <p>CSS3</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/javascript.svg" alt="jQueryのロゴ">
+                  <p>jQuery(JavaScript)</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/php.svg" alt="PHPのロゴ">
+                  <p>PHP</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/wordpress-icon.svg" alt="WordPressのロゴ">
+                  <p>WordPress</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/github-icon.svg" alt="GitHubのロゴ">
+                  <p>Git/GitHub</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/sass.svg" alt="Sassのロゴ">
+                  <p>Sass</p>
+                </div>
+                <div class="p-logos__item">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/html-5.svg" alt="CSS設計のロゴ">
+                  <p>CSS設計</p>
+                </div>
               </div>
             <p>本文が入ります</p>
           </div>

@@ -387,6 +387,78 @@ body {
   justify-content: space-between;
 }
 
+.c-sns-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.c-sns-button li {
+  flex: 0 0 10%;
+  text-align: center;
+}
+.c-sns-button__logo {
+  border-radius: 13px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 33px;
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.c-sns-button__logo:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.c-sns-button__logo i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.c-sns-button__tw {
+  background: #55acee;
+}
+.c-sns-button__fb {
+  background: -webkit-linear-gradient(top, #5c80c6 0%, #34528c 74%);
+  background: linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
+}
+.c-sns-button__fb__fa {
+  position: relative;
+  top: 23px;
+  left: 17px;
+  font-size: 43px;
+}
+
+/* Instagramアイコン位置 */
+.insta_btn6 .fa-instagram {
+  font-size: 40px;
+}
+
+/* Instagram紫グラデ背景 */
+.insta_btn6 {
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  overflow: hidden;
+}
+
+/* Instagramオレンジグラデ背景 */
+.insta_btn6:before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: -12px;
+  width: 59px;
+  height: 40px;
+  background: -webkit-radial-gradient(#ffdb2c 7%, rgba(255, 105, 34, 0.3) 60%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 7%, rgba(255, 105, 34, 0.3) 60%, rgba(255, 88, 96, 0) 70%);
+}
+
 .c-table {
   width: 100%;
 }
@@ -439,6 +511,8 @@ body {
   width: 100%;
 }
 .p-contents__main {
+  margin-left: 30px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,7 +533,7 @@ body {
   height: 650px;
 }
 .p-contents__main__price {
-  width: 70%;
+  width: 75%;
 }
 
 .p-branch-menu {
@@ -883,8 +957,8 @@ body {
 }
 
 .p-logos {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 170px;
+  margin-right: 170px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -932,6 +1006,9 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
+}
+.p-mainvisual__article {
+  margin: 0 30px 0 30px;
 }
 .p-mainvisual__article h2 {
   margin-bottom: 30px;

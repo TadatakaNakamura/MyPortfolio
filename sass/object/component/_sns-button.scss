@@ -1,0 +1,71 @@
+.c-sns-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  li {
+    flex: 0 0 10%;
+    text-align: center;
+  }
+  &__logo {
+    border-radius: 13px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 33px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    text-decoration: none;
+    &:hover {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.c-sns-button {
+  &__tw {
+    background: #55acee;
+  }
+  &__fb {
+    background: -webkit-linear-gradient(top, #5c80c6 0%, #34528c 74%);
+    background: linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
+    &__fa {
+      position: relative;
+      top: 23px;
+      left: 17px;
+      font-size: 43px;
+    }
+  }
+}
+
+  /* Instagramアイコン位置 */
+  .insta_btn6 .fa-instagram{
+  font-size:40px;
+  }
+  /* Instagram紫グラデ背景 */
+  .insta_btn6 {
+  background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  overflow:hidden;
+  }
+  /* Instagramオレンジグラデ背景 */
+  .insta_btn6:before{
+  content: '';
+  position: absolute;
+  top:27px;
+  left:-12px;
+  width:59px;
+  height:40px;
+  background:-webkit-radial-gradient(#ffdb2c 7%, rgba(255, 105, 34, 0.3) 60%, rgba(255, 88, 96, 0) 70%);
+  background:radial-gradient(#ffdb2c 7%, rgba(255, 105, 34, 0.3) 60%, rgba(255, 88, 96, 0) 70%);
+  }

@@ -59,7 +59,22 @@
           </div>
           <div class="p-contents__main__bottom">
             <h2>Works</h2>
-            <p>2つの画像（カスタム投稿？？）</p>
+            <div class="p-work">
+            <?php  if (have_posts()) :
+                while (have_posts()) : the_post(); ?>
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                  <?php the_post_thumbnail(); ?>
+                    <div>
+                      <h3><?php the_title(); ?></h3>
+                      <?php the_excerpt(); ?>
+                      <a href="<?php the_permalink(); ?>">詳しく見る</a>
+                    </div>
+                </div>
+              <?php endwhile;
+              else :
+              ?><p>表示する記事がありません</p>
+            <?php endif; ?>
+            </div>
           </div>
           <div class="p-contents__main__price">
             <h2>Price</h2>

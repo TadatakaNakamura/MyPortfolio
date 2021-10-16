@@ -8,7 +8,7 @@
     align-items: center;
     text-align: center;
     h2 {
-      margin-top: 100px;
+      margin-top: 150px;
       margin-bottom: 40px;
     }
   }
@@ -16,13 +16,13 @@
 
 .p-contents__main {
   &__top {
-    height: 250px;
+    height: auto;
   }
   &__middle {
     height: auto;
   }
   &__bottom {
-    height: 650px;
+    height: auto;
   }
   &__price {
     width: 75%;

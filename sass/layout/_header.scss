@@ -7,10 +7,14 @@
   &__title {
     font-size: 32px;
     padding-left: 23px;
+    h1 {
+      color: black;
+    }
   }
   &__menu {
     display: flex;
     a {
+      color: black;
       font-size: 26px;
       padding: 0 18px;
     }

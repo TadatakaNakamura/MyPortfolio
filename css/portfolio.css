@@ -653,7 +653,7 @@ body {
   border-radius: 30px;
   margin: 20px auto 20px auto;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .p-reference button:hover {
   color: white;
@@ -1231,6 +1231,26 @@ body {
 }
 .p-work__card {
   padding: 0 30px 0 30px;
+}
+.p-work a {
+  font-family: "mplus-1m-bold";
+  display: block;
+  text-align: center;
+  height: 60px;
+  width: 60%;
+  border-radius: 50px;
+  color: #0a0a0a;
+  background-color: #b4fdff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+.p-work a:hover {
+  color: black;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 18px 18px 20px 20px;
 }
 
 .p-pagelink {

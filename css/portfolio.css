@@ -517,8 +517,8 @@ body {
   width: 100%;
 }
 .p-contents__main {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1228,6 +1228,9 @@ body {
 
 .p-work {
   display: flex;
+}
+.p-work__card {
+  padding: 0 30px 0 30px;
 }
 
 .p-pagelink {

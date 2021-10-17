@@ -9,6 +9,7 @@
           <div class="p-mainvisual__article">
             <h2>About</h2>
             <p>2012年立教大学経営学部|2016年営業|2019年独立|2021年RaiseTech/WSSスクール</p>
+            <p>趣味：ウイスキー、フルート</p>
           </div>
           <img src="<?php echo get_template_directory_uri(); ?>/img/kari.jpg" alt="">
         </div>
@@ -62,7 +63,7 @@
             <div class="p-work">
             <?php  if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div class="p-work__card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <?php the_post_thumbnail(); ?>
                     <div>
                       <h3><?php the_title(); ?></h3>

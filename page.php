@@ -25,7 +25,6 @@
         </div>
       </div>
 
-      <?php get_sidebar(); ?>
     </main>
 
     <?php wp_footer(); ?>

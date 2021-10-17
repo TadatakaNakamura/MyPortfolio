@@ -105,7 +105,7 @@
                   <th class="c-table__2__title c-table__title">WordPress実装</th>
                 </tr>
                 <tr>
-                  <th>既存テーマ利用テスト</th>
+                  <th>既存テーマ利用</th>
                   <th>50,000円〜</th>
                 </tr>
                 <tr>

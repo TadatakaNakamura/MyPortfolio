@@ -4,19 +4,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include tab {
+    height: 90px;
+    position: relative;
+  }
   &__title {
     font-size: 32px;
     padding-left: 23px;
+    @include tab {
+      font-size: 26px;
+    }
     h1 {
       color: black;
     }
   }
   &__menu {
     display: flex;
+    @include tab {
+      flex-direction: column;
+      top: 0;
+      height:800px;
+      z-index: 100;
+      position: absolute;
+      right: 0;
+      background-color: aqua;
+    }
     a {
       color: black;
       font-size: 26px;
       padding: 0 18px;
+      @include tab {
+        display: inline-block;
+        padding: 20px 100px 20px 30px;
+      }
     }
   }
 }

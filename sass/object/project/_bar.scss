@@ -1,0 +1,6 @@
+.p-bar {
+  display: none;
+  @include tab {
+    display: block;
+  }
+}

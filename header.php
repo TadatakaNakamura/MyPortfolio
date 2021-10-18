@@ -27,4 +27,8 @@
           <li><a href="">Price</a></li>
           <li><a href="">Contact</a></li>
         </nav>
+
+        <div class="p-bar">
+          <button class="p-bar__button">Menu</button>
+        </div>
       </header>

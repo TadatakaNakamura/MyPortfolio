@@ -9,7 +9,7 @@
           <div class="p-mainvisual__article">
             <h2>About</h2>
             <p>2012年立教大学経営学部|2016年営業|2019年独立|2021年RaiseTech/WSSスクール</p>
-            <p>趣味：ウイスキー、フルート</p>
+            <p>趣味：ウイスキー、フルート、ポケカ</p>
           </div>
           <img src="<?php echo get_template_directory_uri(); ?>/img/kari.jpg" alt="">
         </div>

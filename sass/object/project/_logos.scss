@@ -4,12 +4,20 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  @include tab{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   &__item {
     height: 280px;
     width: 25%;
     img {
       height: 210px;
       width: 160px;
+      @include tab {
+        height: 190px;
+        width: 144px;
+      }
     }
   }
 }

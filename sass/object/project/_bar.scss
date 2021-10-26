@@ -1,6 +1,9 @@
 .p-bar {
   display: none;
   @include tab {
+    font-size: 26px;
     display: block;
+    padding-right: 26px;
+    cursor: pointer;
   }
 }

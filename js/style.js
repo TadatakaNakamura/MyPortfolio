@@ -1,6 +1,6 @@
 jQuery(function(){
     jQuery(".p-bar__button, .c-button__close").click(function () {
-        jQuery(".c-button__close, .l-main__right, .l-main__left, l-main").toggleClass("is-open");
+        jQuery(".l-header__menu, .c-button__close, .l-main__right, .l-main__left, l-main").toggleClass("is-open");
         jQuery("body").toggleClass("is-fixed");
     });
 });

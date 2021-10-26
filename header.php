@@ -21,6 +21,8 @@
         </div>
 
         <nav class="l-header__menu">
+          <div class="c-button__close">
+          </div>
           <li><a href="">About</a></li>
           <li><a href="">Skills</a></li>
           <li><a href="">Works</a></li>

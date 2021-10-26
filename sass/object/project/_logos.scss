@@ -11,12 +11,20 @@
   &__item {
     height: 280px;
     width: 25%;
+    @include sp {
+      height: 200px;
+      width: 50%;
+    }
     img {
       height: 210px;
       width: 160px;
       @include tab {
         height: 190px;
         width: 144px;
+        @include sp {
+          height: 70%;
+          width: 70%;
+        }
       }
     }
   }

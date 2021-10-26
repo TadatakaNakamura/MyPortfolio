@@ -1,7 +1,13 @@
 .p-work {
   display: flex;
+  @include sp {
+    flex-direction: column;
+  }
   &__card {
     padding: 0 30px 0 30px;
+    @include sp {
+      padding-bottom: 40px;
+    }
   }
   a {
     font-family: "mplus-1m-bold";

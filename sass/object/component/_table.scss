@@ -7,6 +7,9 @@
   th {
     font-size: 24px;
     font-weight: 500;
+    @include sp {
+      font-size:  20px;
+    }
   }
   &__title {
     margin: 0 auto;
@@ -45,3 +48,4 @@
     border-bottom: none;
   }
 }
+

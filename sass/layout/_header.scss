@@ -32,6 +32,7 @@
 }
 
 .is-open {
+  animation: 0.5s slidein;
   padding: 80px 60px 0 20px;
   flex-direction: column;
   top: 0;

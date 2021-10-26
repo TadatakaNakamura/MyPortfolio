@@ -24,6 +24,7 @@
           <div class="c-button__close">
           </div>
           <li><a href="">About</a></li>
+          <li><a href="">Servise</a></li>
           <li><a href="">Skills</a></li>
           <li><a href="">Works</a></li>
           <li><a href="">Price</a></li>

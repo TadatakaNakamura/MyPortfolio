@@ -434,6 +434,16 @@ body {
   flex: 0 0 6%;
   text-align: center;
 }
+@media (max-width: 1300px) {
+  .c-sns-button li {
+    flex: 0 0 8%;
+  }
+}
+@media (max-width: 850px) {
+  .c-sns-button li {
+    flex: 0 0 10%;
+  }
+}
 .c-sns-button__logo {
   border-radius: 13px;
   position: relative;

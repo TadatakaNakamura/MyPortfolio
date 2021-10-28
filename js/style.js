@@ -11,3 +11,16 @@ jQuery(window).on("resize", function () {
         jQuery(".l-main__left").removeClass("is-open");
     　}
 });
+
+
+      // スクロールさせたい場所を定義
+      var position = jQuery(".p-contents__main__top").offset().top;
+
+      // 指定のボタンを押したら、スクロールさせる。
+      jQuery(".servise").click(function(){
+        jQuery("html,body").animate({
+            scrollTop : position
+        }, {
+            queue : false
+        });
+      });

@@ -25,11 +25,11 @@ a {
   }
 }
 
-body{
-  &.is-fixed{
-      overflow: hidden;
-  }
-}
+// body{
+//   &.is-fixed{
+//       overflow: hidden;
+//   }
+// }
 
 @font-face{
   font-family: "mplus-1m-bold";

@@ -344,10 +344,6 @@ a {
     transform: translateX(0);
   }
 }
-body.is-fixed {
-  overflow: hidden;
-}
-
 @font-face {
   font-family: "mplus-1m-bold";
   src: url("http://mplus-webfonts.sourceforge.jp/mplus-1m-bold.eot");
@@ -747,9 +743,10 @@ body {
 .p-reference {
   display: flex;
   flex-direction: column;
+  padding-bottom: 140px;
 }
 .p-reference h2 {
-  margin: 100px auto 20px auto;
+  margin: 150px auto 30px auto;
 }
 .p-reference button {
   width: 300px;

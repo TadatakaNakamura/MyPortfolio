@@ -15,12 +15,12 @@
         </div>
 
         <div class="p-contents__main">
-          <div class="p-contents__main__top">
+          <div id="1" class="p-contents__main__top">
             <h2>Servise</h2>
             <p>サイトの制作・運用、静的サイトのWordPress化等、Webサイト制作全般に対応いたします。</p>
             <p>個人の方も大歓迎です。完成まで、責任を持って丁寧に対応させていただきます。</p>
           </div>
-          <div class="p-contents__main__middle">
+          <div id="2" class="p-contents__main__middle">
             <h2>Skils</h2>
               <div class="p-logos">
                 <div class="p-logos__item">
@@ -58,7 +58,7 @@
               </div>
             <p>本文が入ります</p>
           </div>
-          <div class="p-contents__main__bottom">
+          <div id="3" class="p-contents__main__bottom">
             <h2>Works</h2>
             <div class="p-work">
             <?php  if (have_posts()) :
@@ -77,7 +77,7 @@
             <?php endif; ?>
             </div>
           </div>
-          <div class="p-contents__main__price">
+          <div id="4" class="p-contents__main__price">
             <h2>Price</h2>
             <div class="c-table">
               <table class="c-table__1">
@@ -131,7 +131,7 @@
           </div>
         </div>
 
-        <div class="p-reference">
+        <div id="5" class="p-reference">
           <h2>Contact</h2>
           <button>お問い合わせはこちら</button>
         </div>

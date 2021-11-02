@@ -56,7 +56,7 @@
                   <p>CSS設計</p>
                 </div>
               </div>
-            <p>本文が入ります</p>
+            <p>※HTML living standardにも対応可能です</p>
           </div>
           <div id="3" class="p-contents__main__bottom">
             <h2>Works</h2>

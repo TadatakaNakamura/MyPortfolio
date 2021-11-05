@@ -413,6 +413,18 @@ body {
   padding: 20px 100px 20px 30px;
 }
 
+.l-footer {
+  background-color: #ffffdd;
+  height: auto;
+}
+.l-footer ul {
+  padding-top: 40px;
+}
+.l-footer p {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 .l-main {
   display: flex;
   flex-flow: column;
@@ -1168,8 +1180,8 @@ body {
   align-items: center;
 }
 .p-article figure img {
-  height: 257px;
-  width: 438px;
+  height: auto;
+  width: 460px;
   object-fit: cover;
   object-position: center;
 }
@@ -1460,6 +1472,7 @@ body {
 
 .wp-block-image img {
   margin: 0 auto;
+  height: 1000px;
 }
 
 .p-article figure {

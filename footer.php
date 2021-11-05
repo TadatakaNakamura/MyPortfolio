@@ -1,6 +1,4 @@
 <footer class="l-footer">
-  <div class="l-footer__section">
-  </div>
   <ul class="c-sns-button">
     <li><a href="TwitterのプロフィールURL" class="c-sns-button__logo c-sns-button__tw"><i class="fab fa-twitter c-sns-button__tw__fa"></i></a></li>
     <li><a href="インスタのプロフィールURL" class="c-sns-button__logo insta_btn6"><i class="fab fa-instagram c-sns-button__tw__insta"></i></a></li>

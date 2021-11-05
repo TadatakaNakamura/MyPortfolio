@@ -8,8 +8,9 @@
         <div class="p-mainvisual">
           <div class="p-mainvisual__article">
             <h2>About</h2>
-            <p>2012年立教大学経営学部|2016年営業|2019年独立|2021年RaiseTech/WSSスクール</p>
-            <p>趣味：トレカ、ウイスキー、吹奏楽</p>
+            <p>鉄道の商業施設で営業を3年、その後独立して2年が経ちます。Web制作に惹かれ2021年RaiseTechにて勉強を開始。</p>
+            <p>トレカ、ウイスキー、麻雀、フルートが趣味です。</p>
+            <p>まだまだ未熟者ですが、お客様に寄り添い常に最善の選択を考え、提案していくことをお約束いたします</p>
           </div>
           <img src="<?php echo get_template_directory_uri(); ?>/img/kari.jpg" alt="">
         </div>
@@ -17,7 +18,7 @@
         <div class="p-contents__main">
           <div id="1" class="p-contents__main__top">
             <h2>Servise</h2>
-            <p>サイトの制作・運用、静的サイトのWordPress化等、Webサイト制作全般に対応いたします。</p>
+            <p>コーディング全般対応いたします。サイトの制作・運用、静的サイトのWordPress化など</p>
             <p>個人の方も大歓迎です。完成まで、責任を持って丁寧に対応させていただきます。</p>
             <p>お見積りのご依頼やご相談などは、メールアドレスもしくはTwitterのDMより、お問い合わせください。</p>
           </div>

@@ -634,13 +634,21 @@ body {
   }
 }
 .p-contents__main h2 {
-  margin-top: 150px;
   margin-bottom: 40px;
 }
 @media (max-width: 850px) {
   .p-contents__main h2 {
     margin-top: 90px;
   }
+}
+.p-contents__main__top h2 {
+  margin-top: 80px;
+}
+.p-contents__main__middle h2 {
+  margin-top: 150px;
+}
+.p-contents__main__bottom {
+  margin-top: 150px;
 }
 
 .p-contents__main__top {
@@ -654,6 +662,9 @@ body {
 }
 .p-contents__main__price {
   width: 75%;
+}
+.p-contents__main__price h2 {
+  margin-top: 150px;
 }
 
 .p-branch-menu {

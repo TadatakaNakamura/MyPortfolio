@@ -25,10 +25,10 @@
           </div>
           <li><a class="c-menu__close" href="#">Works</a></li>
           <li><a class="c-menu__close" href="#1">Skills</a></li>
-          <li><a class="c-menu__close" href="#2">Servise</a></li>
-          <li><a class="c-menu__close" href="#3">About</a></li>
-          <li><a class="c-menu__close" href="#4">Price</a></li>
-          <li><a class="c-menu__close" href="#5">Contact</a></li>
+          <li><a class="c-menu__close" href="#2">Service</a></li>
+          <li><a class="c-menu__close" href="#3">Price</a></li>
+          <li><a class="c-menu__close" href="#4">Contact</a></li>
+          <li><a class="c-menu__close" href="#5">About</a></li>
         </nav>
 
         <div class="p-bar">

@@ -12,11 +12,23 @@
       margin-right: 4%;
     }
     h2 {
-      margin-top: 150px;
       margin-bottom: 40px;
       @include sp {
         margin-top: 90px;
       }
+    }
+    &__top {
+      h2 {
+        margin-top: 80px;
+      }
+    }
+    &__middle {
+      h2 {
+        margin-top: 150px;
+      }
+    }
+    &__bottom {
+      margin-top: 150px;
     }
   }
 }
@@ -33,5 +45,8 @@
   }
   &__price {
     width: 75%;
+    h2 {
+      margin-top: 150px;
+    }
   }
 }

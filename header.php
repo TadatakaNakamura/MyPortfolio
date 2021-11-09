@@ -23,10 +23,10 @@
         <nav class="l-header__menu">
           <div class="c-button__close">
           </div>
-          <li><a class="c-menu__close" href="#">About</a></li>
-          <li><a class="c-menu__close" href="#1">Servise</a></li>
-          <li><a class="c-menu__close" href="#2">Skills</a></li>
-          <li><a class="c-menu__close" href="#3">Works</a></li>
+          <li><a class="c-menu__close" href="#">Works</a></li>
+          <li><a class="c-menu__close" href="#1">Skills</a></li>
+          <li><a class="c-menu__close" href="#2">Servise</a></li>
+          <li><a class="c-menu__close" href="#3">About</a></li>
           <li><a class="c-menu__close" href="#4">Price</a></li>
           <li><a class="c-menu__close" href="#5">Contact</a></li>
         </nav>
